@@ -15,46 +15,52 @@ public class JointDriveTuner : MonoBehaviour
     public float maxForceScalar = 4.0f;
 
     [ContextMenu("Apply Drive Settings")]
-    public void ApplyDrives(GameObject doll)
+    public void ApplyDrives(BodyController body)
     {
-        foreach (var cj in doll.GetComponentsInChildren<ConfigurableJoint>())
+        foreach (var jt in  body.targetJoints.Values)
         {
-            string name = cj.gameObject.name.ToLower();
+            string name = jt.joint.gameObject.name.ToLower();
+
             JointDrive drive;
 
             if (name.Contains("thigh") || name.Contains("shin"))
             {
                 drive = GenerateDrive(springValues.legSpring);
+                jt.baseStrength = drive.positionSpring;
             }
             else if (name.Contains("foot"))
             {
                 drive = GenerateDrive(springValues.footSpring);
+                jt.baseStrength = drive.positionSpring;
             }
             else if (name.Contains("chest") || name.Contains("hips"))
             {
                 drive = GenerateDrive(springValues.torsoSpring);
+                jt.baseStrength = drive.positionSpring;
             }
             else if (name.Contains("upperarm") || name.Contains("forearm") || name.Contains("hand"))
             {
                 drive = GenerateDrive(springValues.armSpring);
+                jt.baseStrength = drive.positionSpring;
             }
             else if (name.Contains("head") || name.Contains("neck"))
             {
                 drive = GenerateDrive(springValues.headSpring);
+                jt.baseStrength = drive.positionSpring;
             }
             else
             {
                 continue;
             }
 
-            cj.rotationDriveMode = RotationDriveMode.Slerp;
-            cj.slerpDrive = drive;
-            cj.angularXDrive = drive;
-            cj.angularYZDrive = drive;
+            jt.joint.slerpDrive = drive;
+            jt.joint.angularXDrive = drive;
+            jt.joint.angularYZDrive = drive;
+            jt.joint.rotationDriveMode = RotationDriveMode.Slerp;
         }
     }
 
-    private JointDrive GenerateDrive(float spring)
+    public JointDrive GenerateDrive(float spring)
     {
         float damper = criticalFactor * 2 * Mathf.Sqrt(spring);
         float maxForce = spring * maxForceScalar;

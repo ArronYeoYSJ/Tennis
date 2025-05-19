@@ -31,10 +31,11 @@ public class BodyController : MonoBehaviour
             var jt = new JointTarget
             {
                 joint = joint,
-                thetaDampening = 1f,
+                baseStrength = 10000f,
                 initialLocalRotation = joint.transform.localRotation,
                 collider = col,
                 allowGroundContact = foot
+
             };
 
             targetJoints[joint.name] = jt;
@@ -93,7 +94,7 @@ public class BodyController : MonoBehaviour
     public class JointTarget
     {
         public ConfigurableJoint joint;
-        public float thetaDampening;
+        public float baseStrength;
 
         public Quaternion initialLocalRotation;
         [HideInInspector]

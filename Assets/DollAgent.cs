@@ -71,7 +71,7 @@ public class DollAgent : Agent
 
         if (jointDriveTuner != null)
         {
-            jointDriveTuner.ApplyDrives(dollInstance);
+            jointDriveTuner.ApplyDrives(bodyController);
         }
         else { Debug.LogError("jointDriveTuner not found"); }
 
@@ -249,6 +249,7 @@ public class DollAgent : Agent
     {
         int i = 0;
 
+
         foreach (var jt in bodyController.targetJoints.Values)
         {
             // string jointName = jt.joint.name;
@@ -287,12 +288,18 @@ public class DollAgent : Agent
             // );
 
             jt.joint.targetRotation = Quaternion.Euler(deltaEuler.x, deltaEuler.y, deltaEuler.z);
+
+            float newForce = actions.ContinuousActions[i++] * 0.5f * jt.baseStrength + jt.baseStrength;
+
+            jt.joint.slerpDrive = jointDriveTuner.GenerateDrive(newForce);
+
             // jt.joint.targetRotation = jt.previousLocalRotationTarget * jt.joint.transform.localRotation * Quaternion.Inverse(jt.initialLocalRotation);
             // jt.previousLocalRotationTarget = jt.joint.targetRotation;
             //currentEularJointRotation = new Vector3(deltaEuler.x, deltaEuler.y, deltaEuler.z);
 
         }
     }
+    
 
 
     // private void SetTargetRotation(ConfigurableJoint joint, Quaternion targetRotation, Quaternion startRotation)
@@ -312,7 +319,7 @@ public class DollAgent : Agent
 
     // }
 
-//     private void SetTargetRotation(ConfigurableJoint joint, Quaternion actionGeneratedRotationDelta, Quaternion referenceTransformLocalRotation)
+    //     private void SetTargetRotation(ConfigurableJoint joint, Quaternion actionGeneratedRotationDelta, Quaternion referenceTransformLocalRotation)
     // {
     //     // actionGeneratedRotationDelta is Quaternion.Euler(deltaEuler) from ApplyActions
     //     // referenceTransformLocalRotation is referencePose[joint.name]
@@ -352,17 +359,17 @@ public class DollAgent : Agent
     /// Determines the axis mask for each joint based on its name. Returns a mask for limiting rotation in (usually)
     /// impossible axiis for human movement
     /// </summary>
-    private Vector3 GetAxisMask(string jointName)
-    {
-        if (jointName.Contains("head")) return new Vector3(0.5f,0.5f,0.2f);
-        if (jointName.Contains("upper")) return new Vector3(0.5f,0.5f,1f);        
-        if (jointName.Contains("forearm")) return new Vector3(1, 0.3f, 0.8f);
-        if (jointName.Contains("chest")) return new Vector3(0.5f, 0.5f, 0.5f);
-        if (jointName.Contains("shin")) return new Vector3(1, 0.1f, 0.1f);
-        if (jointName.Contains("thigh")) return new Vector3(1, 0.6f, 0.8f);
-        if (jointName.Contains("foot")) return new Vector3(1, 0.6f, 0.35f);
-        return Vector3.one;
-    }
+    // private Vector3 GetAxisMask(string jointName)
+    // {
+    //     if (jointName.Contains("head")) return new Vector3(0.5f,0.5f,0.2f);
+    //     if (jointName.Contains("upper")) return new Vector3(0.5f,0.5f,1f);        
+    //     if (jointName.Contains("forearm")) return new Vector3(1, 0.3f, 0.8f);
+    //     if (jointName.Contains("chest")) return new Vector3(0.5f, 0.5f, 0.5f);
+    //     if (jointName.Contains("shin")) return new Vector3(1, 0.1f, 0.1f);
+    //     if (jointName.Contains("thigh")) return new Vector3(1, 0.6f, 0.8f);
+    //     if (jointName.Contains("foot")) return new Vector3(1, 0.6f, 0.35f);
+    //     return Vector3.one;
+    // }
 
     // private Vector3 NormalizeEuler(Vector3 euler)
     // {
