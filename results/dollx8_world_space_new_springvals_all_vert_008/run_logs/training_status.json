@@ -1,0 +1,65 @@
+{
+    "DollAgent": {
+        "checkpoints": [
+            {
+                "steps": 199963,
+                "file_path": "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent\\DollAgent-199963.onnx",
+                "reward": 221.62103569076723,
+                "creation_time": 1747316069.3120086,
+                "auxillary_file_paths": [
+                    "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent\\DollAgent-199963.pt"
+                ]
+            },
+            {
+                "steps": 299984,
+                "file_path": "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent\\DollAgent-299984.onnx",
+                "reward": 225.7647607046015,
+                "creation_time": 1747316271.8684227,
+                "auxillary_file_paths": [
+                    "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent\\DollAgent-299984.pt"
+                ]
+            },
+            {
+                "steps": 399957,
+                "file_path": "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent\\DollAgent-399957.onnx",
+                "reward": 249.18596419029765,
+                "creation_time": 1747316461.996556,
+                "auxillary_file_paths": [
+                    "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent\\DollAgent-399957.pt"
+                ]
+            },
+            {
+                "steps": 499942,
+                "file_path": "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent\\DollAgent-499942.onnx",
+                "reward": 245.87656189570916,
+                "creation_time": 1747316658.3852625,
+                "auxillary_file_paths": [
+                    "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent\\DollAgent-499942.pt"
+                ]
+            },
+            {
+                "steps": 517873,
+                "file_path": "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent\\DollAgent-517873.onnx",
+                "reward": 257.7425082940322,
+                "creation_time": 1747316759.4661412,
+                "auxillary_file_paths": [
+                    "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent\\DollAgent-517873.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 517873,
+            "file_path": "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent.onnx",
+            "reward": 257.7425082940322,
+            "creation_time": 1747316759.4661412,
+            "auxillary_file_paths": [
+                "results\\dollx8_world_space_new_springvals_all_vert_008\\DollAgent\\DollAgent-517873.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "DollAgent": {
+        "checkpoints": [
+            {
+                "steps": 99978,
+                "file_path": "results\\dollx8_new_joint_cntrl_run002\\DollAgent\\DollAgent-99978.onnx",
+                "reward": 17.87556128818672,
+                "creation_time": 1747053472.324554,
+                "auxillary_file_paths": [
+                    "results\\dollx8_new_joint_cntrl_run002\\DollAgent\\DollAgent-99978.pt"
+                ]
+            },
+            {
+                "steps": 199984,
+                "file_path": "results\\dollx8_new_joint_cntrl_run002\\DollAgent\\DollAgent-199984.onnx",
+                "reward": 26.736820794974165,
+                "creation_time": 1747053672.9935184,
+                "auxillary_file_paths": [
+                    "results\\dollx8_new_joint_cntrl_run002\\DollAgent\\DollAgent-199984.pt"
+                ]
+            },
+            {
+                "steps": 299981,
+                "file_path": "results\\dollx8_new_joint_cntrl_run002\\DollAgent\\DollAgent-299981.onnx",
+                "reward": 32.57388459957712,
+                "creation_time": 1747053877.86647,
+                "auxillary_file_paths": [
+                    "results\\dollx8_new_joint_cntrl_run002\\DollAgent\\DollAgent-299981.pt"
+                ]
+            },
+            {
+                "steps": 312407,
+                "file_path": "results\\dollx8_new_joint_cntrl_run002\\DollAgent\\DollAgent-312407.onnx",
+                "reward": 32.13991987828127,
+                "creation_time": 1747053971.5594046,
+                "auxillary_file_paths": [
+                    "results\\dollx8_new_joint_cntrl_run002\\DollAgent\\DollAgent-312407.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 312407,
+            "file_path": "results\\dollx8_new_joint_cntrl_run002\\DollAgent.onnx",
+            "reward": 32.13991987828127,
+            "creation_time": 1747053971.5594046,
+            "auxillary_file_paths": [
+                "results\\dollx8_new_joint_cntrl_run002\\DollAgent\\DollAgent-312407.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

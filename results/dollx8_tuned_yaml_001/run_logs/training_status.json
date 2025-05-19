@@ -1,0 +1,47 @@
+{
+    "DollAgent": {
+        "checkpoints": [
+            {
+                "steps": 199985,
+                "file_path": "results\\dollx8_tuned_yaml_001\\DollAgent\\DollAgent-199985.onnx",
+                "reward": 36.55789927881818,
+                "creation_time": 1747321811.6833825,
+                "auxillary_file_paths": [
+                    "results\\dollx8_tuned_yaml_001\\DollAgent\\DollAgent-199985.pt"
+                ]
+            },
+            {
+                "steps": 399971,
+                "file_path": "results\\dollx8_tuned_yaml_001\\DollAgent\\DollAgent-399971.onnx",
+                "reward": 56.464335965401176,
+                "creation_time": 1747322324.1207113,
+                "auxillary_file_paths": [
+                    "results\\dollx8_tuned_yaml_001\\DollAgent\\DollAgent-399971.pt"
+                ]
+            },
+            {
+                "steps": 405916,
+                "file_path": "results\\dollx8_tuned_yaml_001\\DollAgent\\DollAgent-405916.onnx",
+                "reward": 56.27008052704119,
+                "creation_time": 1747322338.257247,
+                "auxillary_file_paths": [
+                    "results\\dollx8_tuned_yaml_001\\DollAgent\\DollAgent-405916.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 405916,
+            "file_path": "results\\dollx8_tuned_yaml_001\\DollAgent.onnx",
+            "reward": 56.27008052704119,
+            "creation_time": 1747322338.257247,
+            "auxillary_file_paths": [
+                "results\\dollx8_tuned_yaml_001\\DollAgent\\DollAgent-405916.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

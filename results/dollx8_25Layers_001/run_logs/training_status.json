@@ -1,0 +1,65 @@
+{
+    "DollAgent": {
+        "checkpoints": [
+            {
+                "steps": 199997,
+                "file_path": "results\\dollx8_25Layers_001\\DollAgent\\DollAgent-199997.onnx",
+                "reward": 158.55420946223396,
+                "creation_time": 1747317249.4518447,
+                "auxillary_file_paths": [
+                    "results\\dollx8_25Layers_001\\DollAgent\\DollAgent-199997.pt"
+                ]
+            },
+            {
+                "steps": 299950,
+                "file_path": "results\\dollx8_25Layers_001\\DollAgent\\DollAgent-299950.onnx",
+                "reward": 256.3209012001753,
+                "creation_time": 1747317476.12923,
+                "auxillary_file_paths": [
+                    "results\\dollx8_25Layers_001\\DollAgent\\DollAgent-299950.pt"
+                ]
+            },
+            {
+                "steps": 399997,
+                "file_path": "results\\dollx8_25Layers_001\\DollAgent\\DollAgent-399997.onnx",
+                "reward": 242.37897488613,
+                "creation_time": 1747317689.9598918,
+                "auxillary_file_paths": [
+                    "results\\dollx8_25Layers_001\\DollAgent\\DollAgent-399997.pt"
+                ]
+            },
+            {
+                "steps": 499943,
+                "file_path": "results\\dollx8_25Layers_001\\DollAgent\\DollAgent-499943.onnx",
+                "reward": 240.51704357288503,
+                "creation_time": 1747317921.6987243,
+                "auxillary_file_paths": [
+                    "results\\dollx8_25Layers_001\\DollAgent\\DollAgent-499943.pt"
+                ]
+            },
+            {
+                "steps": 517915,
+                "file_path": "results\\dollx8_25Layers_001\\DollAgent\\DollAgent-517915.onnx",
+                "reward": 232.2091712675233,
+                "creation_time": 1747318025.6444957,
+                "auxillary_file_paths": [
+                    "results\\dollx8_25Layers_001\\DollAgent\\DollAgent-517915.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 517915,
+            "file_path": "results\\dollx8_25Layers_001\\DollAgent.onnx",
+            "reward": 232.2091712675233,
+            "creation_time": 1747318025.6444957,
+            "auxillary_file_paths": [
+                "results\\dollx8_25Layers_001\\DollAgent\\DollAgent-517915.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

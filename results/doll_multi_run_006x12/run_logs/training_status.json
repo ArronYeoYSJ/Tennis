@@ -1,0 +1,56 @@
+{
+    "DollAgent": {
+        "checkpoints": [
+            {
+                "steps": 99983,
+                "file_path": "results\\doll_multi_run_006x12\\DollAgent\\DollAgent-99983.onnx",
+                "reward": 79.69223139067404,
+                "creation_time": 1746888750.2342536,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_006x12\\DollAgent\\DollAgent-99983.pt"
+                ]
+            },
+            {
+                "steps": 199962,
+                "file_path": "results\\doll_multi_run_006x12\\DollAgent\\DollAgent-199962.onnx",
+                "reward": 91.88696560525058,
+                "creation_time": 1746888854.218474,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_006x12\\DollAgent\\DollAgent-199962.pt"
+                ]
+            },
+            {
+                "steps": 299991,
+                "file_path": "results\\doll_multi_run_006x12\\DollAgent\\DollAgent-299991.onnx",
+                "reward": 99.39569577750038,
+                "creation_time": 1746888957.8064575,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_006x12\\DollAgent\\DollAgent-299991.pt"
+                ]
+            },
+            {
+                "steps": 378023,
+                "file_path": "results\\doll_multi_run_006x12\\DollAgent\\DollAgent-378023.onnx",
+                "reward": 105.27973355106049,
+                "creation_time": 1746889104.107281,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_006x12\\DollAgent\\DollAgent-378023.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 378023,
+            "file_path": "results\\doll_multi_run_006x12\\DollAgent.onnx",
+            "reward": 105.27973355106049,
+            "creation_time": 1746889104.107281,
+            "auxillary_file_paths": [
+                "results\\doll_multi_run_006x12\\DollAgent\\DollAgent-378023.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

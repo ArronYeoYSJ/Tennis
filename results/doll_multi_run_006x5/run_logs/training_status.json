@@ -1,0 +1,56 @@
+{
+    "DollAgent": {
+        "checkpoints": [
+            {
+                "steps": 99964,
+                "file_path": "results\\doll_multi_run_006x5\\DollAgent\\DollAgent-99964.onnx",
+                "reward": 105.18709407783136,
+                "creation_time": 1746881078.666036,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_006x5\\DollAgent\\DollAgent-99964.pt"
+                ]
+            },
+            {
+                "steps": 199972,
+                "file_path": "results\\doll_multi_run_006x5\\DollAgent\\DollAgent-199972.onnx",
+                "reward": 121.86620908313327,
+                "creation_time": 1746881309.337145,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_006x5\\DollAgent\\DollAgent-199972.pt"
+                ]
+            },
+            {
+                "steps": 299989,
+                "file_path": "results\\doll_multi_run_006x5\\DollAgent\\DollAgent-299989.onnx",
+                "reward": 140.287507380758,
+                "creation_time": 1746881486.2895997,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_006x5\\DollAgent\\DollAgent-299989.pt"
+                ]
+            },
+            {
+                "steps": 389690,
+                "file_path": "results\\doll_multi_run_006x5\\DollAgent\\DollAgent-389690.onnx",
+                "reward": 128.67343558625478,
+                "creation_time": 1746881702.5761173,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_006x5\\DollAgent\\DollAgent-389690.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 389690,
+            "file_path": "results\\doll_multi_run_006x5\\DollAgent.onnx",
+            "reward": 128.67343558625478,
+            "creation_time": 1746881702.5761173,
+            "auxillary_file_paths": [
+                "results\\doll_multi_run_006x5\\DollAgent\\DollAgent-389690.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

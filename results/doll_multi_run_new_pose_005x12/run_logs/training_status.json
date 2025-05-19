@@ -1,0 +1,29 @@
+{
+    "DollAgent": {
+        "checkpoints": [
+            {
+                "steps": 10208,
+                "file_path": "results\\doll_multi_run_new_pose_005x12\\DollAgent\\DollAgent-10208.onnx",
+                "reward": 86.51120447814465,
+                "creation_time": 1746969825.286239,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_new_pose_005x12\\DollAgent\\DollAgent-10208.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10208,
+            "file_path": "results\\doll_multi_run_new_pose_005x12\\DollAgent.onnx",
+            "reward": 86.51120447814465,
+            "creation_time": 1746969825.286239,
+            "auxillary_file_paths": [
+                "results\\doll_multi_run_new_pose_005x12\\DollAgent\\DollAgent-10208.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

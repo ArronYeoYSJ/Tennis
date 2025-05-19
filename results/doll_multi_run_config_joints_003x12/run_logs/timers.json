@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1746924818",
+        "python_version": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\arron\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\mlagents-learn Assets\\DollAgentConfig.yaml --run-id=doll_multi_run_config_joints_003x12 --force",
+        "mlagents_version": "1.1.0",
+        "mlagents_envs_version": "1.1.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.6.0+cpu",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1746924825"
+    },
+    "total": 7.544509299797937,
+    "count": 1,
+    "self": 0.005143599584698677,
+    "children": {
+        "run_training.setup": {
+            "total": 0.06782950018532574,
+            "count": 1,
+            "self": 0.06782950018532574
+        },
+        "TrainerController.start_learning": {
+            "total": 7.471536200027913,
+            "count": 1,
+            "self": 8.020014502108097e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.471438700100407,
+                    "count": 1,
+                    "self": 7.471438700100407
+                },
+                "TrainerController._save_models": {
+                    "total": 1.729978248476982e-05,
+                    "count": 1,
+                    "self": 1.729978248476982e-05
+                }
+            }
+        }
+    }
+}

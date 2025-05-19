@@ -1,0 +1,38 @@
+{
+    "DollAgent": {
+        "checkpoints": [
+            {
+                "steps": 99985,
+                "file_path": "results\\doll_multi_run_reward_at_end_only_002x12\\DollAgent\\DollAgent-99985.onnx",
+                "reward": 13.851062857661365,
+                "creation_time": 1746891521.5591,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_reward_at_end_only_002x12\\DollAgent\\DollAgent-99985.pt"
+                ]
+            },
+            {
+                "steps": 186225,
+                "file_path": "results\\doll_multi_run_reward_at_end_only_002x12\\DollAgent\\DollAgent-186225.onnx",
+                "reward": 10.47454513311386,
+                "creation_time": 1746891729.5174577,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_reward_at_end_only_002x12\\DollAgent\\DollAgent-186225.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 186225,
+            "file_path": "results\\doll_multi_run_reward_at_end_only_002x12\\DollAgent.onnx",
+            "reward": 10.47454513311386,
+            "creation_time": 1746891729.5174577,
+            "auxillary_file_paths": [
+                "results\\doll_multi_run_reward_at_end_only_002x12\\DollAgent\\DollAgent-186225.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

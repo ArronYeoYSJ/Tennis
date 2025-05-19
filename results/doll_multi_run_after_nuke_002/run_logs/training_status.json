@@ -1,0 +1,65 @@
+{
+    "DollAgent": {
+        "checkpoints": [
+            {
+                "steps": 1499983,
+                "file_path": "results\\doll_multi_run_after_nuke_002\\DollAgent\\DollAgent-1499983.onnx",
+                "reward": 83.83272604147594,
+                "creation_time": 1746999685.6279101,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_after_nuke_002\\DollAgent\\DollAgent-1499983.pt"
+                ]
+            },
+            {
+                "steps": 1599994,
+                "file_path": "results\\doll_multi_run_after_nuke_002\\DollAgent\\DollAgent-1599994.onnx",
+                "reward": 83.7108571548462,
+                "creation_time": 1746999814.575779,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_after_nuke_002\\DollAgent\\DollAgent-1599994.pt"
+                ]
+            },
+            {
+                "steps": 1699980,
+                "file_path": "results\\doll_multi_run_after_nuke_002\\DollAgent\\DollAgent-1699980.onnx",
+                "reward": 89.94189205083502,
+                "creation_time": 1746999945.9312606,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_after_nuke_002\\DollAgent\\DollAgent-1699980.pt"
+                ]
+            },
+            {
+                "steps": 1799968,
+                "file_path": "results\\doll_multi_run_after_nuke_002\\DollAgent\\DollAgent-1799968.onnx",
+                "reward": 86.47145108722505,
+                "creation_time": 1747000077.122809,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_after_nuke_002\\DollAgent\\DollAgent-1799968.pt"
+                ]
+            },
+            {
+                "steps": 1856164,
+                "file_path": "results\\doll_multi_run_after_nuke_002\\DollAgent\\DollAgent-1856164.onnx",
+                "reward": 83.89982358242604,
+                "creation_time": 1747000184.998997,
+                "auxillary_file_paths": [
+                    "results\\doll_multi_run_after_nuke_002\\DollAgent\\DollAgent-1856164.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1856164,
+            "file_path": "results\\doll_multi_run_after_nuke_002\\DollAgent.onnx",
+            "reward": 83.89982358242604,
+            "creation_time": 1747000184.998997,
+            "auxillary_file_paths": [
+                "results\\doll_multi_run_after_nuke_002\\DollAgent\\DollAgent-1856164.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}
