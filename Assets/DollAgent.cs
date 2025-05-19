@@ -14,6 +14,8 @@ public class DollAgent : Agent
 
     [Header("Reward & Bias")]
     public float fallenThreshold = 1f;
+    public LayerMask ground;
+    
     [Range(0.01f, 1f)]
     [Tooltip("Adjusts the balance between favouring rewards for posture (0f) and verticality (1f)")]
     public float verticalityBias = 0.5f;
@@ -49,6 +51,8 @@ public class DollAgent : Agent
 
     private Vector3 normalizedDelta;
     private Vector3 currentEularJointRotation;
+
+    private Vector3 footTargets;
 
 
 
@@ -86,12 +90,23 @@ public class DollAgent : Agent
 
             poseCaptured = true;
         }
+        /// creates a measure of the starting positions of the feet relative to each other for later scoring
+
 
         float idealShinLength = bodyController.rightShin.transform.position.y - bodyController.rightFoot.transform.position.y;
         float idealThighLength = bodyController.rightThigh.transform.position.y - bodyController.rightShin.transform.position.y;
+        Vector3 rightFootStartPos = bodyController.rightFoot.transform.position;
+        Vector3 leftFootStartPos = bodyController.leftFoot.transform.position;
+        Vector3 startingFootDelta = bodyController.leftFoot.transform.InverseTransformPoint(rightFootStartPos);
+
+        footTargets = new Vector3(
+            startingFootDelta.x,
+            startingFootDelta.y,
+            startingFootDelta.z
+            );
 
         //init the helper classes
-        rewardEvaluator = new RewardEvaluator(bodyController, floor, fallenThreshold, heightRewardMulti, idealShinLength, idealThighLength);
+        rewardEvaluator = new RewardEvaluator(bodyController, floor, ground, fallenThreshold, heightRewardMulti, idealShinLength, idealThighLength);
 
     }
     
@@ -143,8 +158,36 @@ public class DollAgent : Agent
         //Penalty if feet cross over
         Vector3 rightFootPos = bodyController.rightFoot.transform.position;
         Vector3 leftFootPos = bodyController.leftFoot.transform.position;
-        var footSpacingReward = Vector3.Dot(rightFootPos - leftFootPos, bodyController.leftFoot.transform.right);
-        Mathf.Clamp(footSpacingReward, -1f, 0.1f);
+
+        Vector3 localFootDistance = bodyController.leftFoot.transform.InverseTransformPoint(rightFootPos);
+
+        float footReward = 0f;
+        //feet crossed / too close
+        if (localFootDistance.x < 0.05f)
+        {
+            footReward -= 1f;
+        }
+        else if (localFootDistance.x <= footTargets.x * 1.2f)
+        {
+            footReward += 0.02f;
+        }
+        else
+        {
+            footReward -= localFootDistance.x - (1.2f * footTargets.x);
+        }
+
+        //penalty if feet too far front to back
+
+        if (Mathf.Abs(localFootDistance.x) > footTargets.z + 0.2f)
+        {
+            footReward += -(Mathf.Abs(localFootDistance.z) - (footTargets.z + 0.2f));
+        }
+        else
+        {
+            footReward += 0.02f;
+        }
+       
+        footReward = Mathf.Clamp(footReward, -1f, 0.2f);
 
         //hardcoded values created similar rewards during sim
         float poseScore = 0f;
@@ -164,7 +207,7 @@ public class DollAgent : Agent
         float poseReward = poseScore * (1f - verticalityBias);
         float postureReward = rewardEvaluator.Evaluate() * verticalityBias * 0.5f;
 
-        AddReward(footSpacingReward);
+        AddReward(footReward);
         AddReward(poseReward);
         AddReward(postureReward);
 

@@ -280,6 +280,10 @@ PrefabInstance:
       value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
+      propertyPath: ground.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: maxJointTheta
       value: 100
       objectReference: {fileID: 0}
@@ -321,7 +325,7 @@ PrefabInstance:
       objectReference: {fileID: 5022602860645237092, guid: a61966209755df145b94787863c6831a, type: 3}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_BehaviorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_InferenceDevice
@@ -913,6 +917,10 @@ PrefabInstance:
       value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
+      propertyPath: ground.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: maxJointTheta
       value: 100
       objectReference: {fileID: 0}
@@ -954,7 +962,7 @@ PrefabInstance:
       objectReference: {fileID: 5022602860645237092, guid: a61966209755df145b94787863c6831a, type: 3}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_BehaviorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_InferenceDevice
@@ -1550,6 +1558,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
+      propertyPath: ground.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: maxJointTheta
       value: 100
       objectReference: {fileID: 0}
@@ -1583,7 +1595,7 @@ PrefabInstance:
       objectReference: {fileID: 5022602860645237092, guid: a61966209755df145b94787863c6831a, type: 3}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_BehaviorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_InferenceDevice
@@ -2180,6 +2192,10 @@ PrefabInstance:
       value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
+      propertyPath: ground.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: maxJointTheta
       value: 100
       objectReference: {fileID: 0}
@@ -2221,7 +2237,7 @@ PrefabInstance:
       objectReference: {fileID: 5022602860645237092, guid: a61966209755df145b94787863c6831a, type: 3}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_BehaviorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_InferenceDevice
@@ -2916,6 +2932,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
+      propertyPath: ground.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: maxJointTheta
       value: 100
       objectReference: {fileID: 0}
@@ -2953,7 +2973,7 @@ PrefabInstance:
       objectReference: {fileID: 5022602860645237092, guid: a61966209755df145b94787863c6831a, type: 3}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_BehaviorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_InferenceDevice
@@ -3641,6 +3661,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
+      propertyPath: ground.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: maxJointTheta
       value: 100
       objectReference: {fileID: 0}
@@ -3682,7 +3706,7 @@ PrefabInstance:
       objectReference: {fileID: 5022602860645237092, guid: a61966209755df145b94787863c6831a, type: 3}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_BehaviorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_InferenceDevice
@@ -4274,6 +4298,10 @@ PrefabInstance:
       value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
+      propertyPath: ground.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: maxJointTheta
       value: 100
       objectReference: {fileID: 0}
@@ -4315,7 +4343,7 @@ PrefabInstance:
       objectReference: {fileID: 5022602860645237092, guid: a61966209755df145b94787863c6831a, type: 3}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_BehaviorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_InferenceDevice
@@ -4911,6 +4939,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
+      propertyPath: ground.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459655158201302455, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: maxJointTheta
       value: 100
       objectReference: {fileID: 0}
@@ -4948,7 +4980,7 @@ PrefabInstance:
       objectReference: {fileID: 5022602860645237092, guid: a61966209755df145b94787863c6831a, type: 3}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_BehaviorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7908416338575260448, guid: 64b3100ea3d16c04e8495ee75ac0d60f, type: 3}
       propertyPath: m_InferenceDevice
@@ -5396,6 +5428,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 748708425804645164, guid: 2d4450e09bc016d4890e145e35a7dff3, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2573331137988109498, guid: 2d4450e09bc016d4890e145e35a7dff3, type: 3}
       propertyPath: m_Material
       value: 

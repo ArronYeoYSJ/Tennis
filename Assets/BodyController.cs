@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class BodyController : MonoBehaviour
 {
@@ -15,11 +16,25 @@ public class BodyController : MonoBehaviour
 
         foreach (var joint in joints)
         {
+            Collider col;
+            Boolean foot = false;
+            if (joint.name.Contains("foot"))
+            {
+                col = GetComponentInChildren<Collider>();
+                foot = true;
+            }
+            else
+            {
+                col = joint.GetComponent<Collider>();
+            }
+            
             var jt = new JointTarget
             {
                 joint = joint,
                 thetaDampening = 1f,
-                initialLocalRotation = joint.transform.localRotation
+                initialLocalRotation = joint.transform.localRotation,
+                collider = col,
+                allowGroundContact = foot
             };
 
             targetJoints[joint.name] = jt;
@@ -83,5 +98,8 @@ public class BodyController : MonoBehaviour
         public Quaternion initialLocalRotation;
         [HideInInspector]
         public Quaternion previousLocalRotationTarget;
+
+        public Collider collider;
+        public Boolean allowGroundContact;
     }
 }
