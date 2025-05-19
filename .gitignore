@@ -44,5 +44,9 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+#Models
+*.onnx
+*.pt
+
 # Crashlytics generated file
 crashlytics-build.properties
