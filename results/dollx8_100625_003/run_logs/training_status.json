@@ -1,0 +1,119 @@
+{
+    "DollAgent": {
+        "checkpoints": [
+            {
+                "steps": 499983,
+                "file_path": "results\\dollx8_100625_003\\DollAgent\\DollAgent-499983.onnx",
+                "reward": 424.57834769584036,
+                "creation_time": 1749570958.521641,
+                "auxillary_file_paths": [
+                    "results\\dollx8_100625_003\\DollAgent\\DollAgent-499983.pt"
+                ]
+            },
+            {
+                "steps": 999896,
+                "file_path": "results\\dollx8_100625_003\\DollAgent\\DollAgent-999896.onnx",
+                "reward": 606.7777145061087,
+                "creation_time": 1749573276.989695,
+                "auxillary_file_paths": [
+                    "results\\dollx8_100625_003\\DollAgent\\DollAgent-999896.pt"
+                ]
+            },
+            {
+                "steps": 1499703,
+                "file_path": "results\\dollx8_100625_003\\DollAgent\\DollAgent-1499703.onnx",
+                "reward": 1427.4041607196514,
+                "creation_time": 1749575965.9039924,
+                "auxillary_file_paths": [
+                    "results\\dollx8_100625_003\\DollAgent\\DollAgent-1499703.pt"
+                ]
+            },
+            {
+                "steps": 1999961,
+                "file_path": "results\\dollx8_100625_003\\DollAgent\\DollAgent-1999961.onnx",
+                "reward": 1797.5983302904212,
+                "creation_time": 1749578656.365222,
+                "auxillary_file_paths": [
+                    "results\\dollx8_100625_003\\DollAgent\\DollAgent-1999961.pt"
+                ]
+            },
+            {
+                "steps": 2499654,
+                "file_path": "results\\dollx8_100625_003\\DollAgent\\DollAgent-2499654.onnx",
+                "reward": 2044.3759009951636,
+                "creation_time": 1749581348.932866,
+                "auxillary_file_paths": [
+                    "results\\dollx8_100625_003\\DollAgent\\DollAgent-2499654.pt"
+                ]
+            },
+            {
+                "steps": 2999781,
+                "file_path": "results\\dollx8_100625_003\\DollAgent\\DollAgent-2999781.onnx",
+                "reward": 2071.6181030273438,
+                "creation_time": 1749584057.9269385,
+                "auxillary_file_paths": [
+                    "results\\dollx8_100625_003\\DollAgent\\DollAgent-2999781.pt"
+                ]
+            },
+            {
+                "steps": 3499396,
+                "file_path": "results\\dollx8_100625_003\\DollAgent\\DollAgent-3499396.onnx",
+                "reward": 2021.545177641369,
+                "creation_time": 1749586755.063578,
+                "auxillary_file_paths": [
+                    "results\\dollx8_100625_003\\DollAgent\\DollAgent-3499396.pt"
+                ]
+            },
+            {
+                "steps": 3999510,
+                "file_path": "results\\dollx8_100625_003\\DollAgent\\DollAgent-3999510.onnx",
+                "reward": 1819.6393963357677,
+                "creation_time": 1749589471.2966733,
+                "auxillary_file_paths": [
+                    "results\\dollx8_100625_003\\DollAgent\\DollAgent-3999510.pt"
+                ]
+            },
+            {
+                "steps": 4499997,
+                "file_path": "results\\dollx8_100625_003\\DollAgent\\DollAgent-4499997.onnx",
+                "reward": 2001.7104651409647,
+                "creation_time": 1749592181.5891426,
+                "auxillary_file_paths": [
+                    "results\\dollx8_100625_003\\DollAgent\\DollAgent-4499997.pt"
+                ]
+            },
+            {
+                "steps": 4999930,
+                "file_path": "results\\dollx8_100625_003\\DollAgent\\DollAgent-4999930.onnx",
+                "reward": 1949.2513427734375,
+                "creation_time": 1749594891.4706404,
+                "auxillary_file_paths": [
+                    "results\\dollx8_100625_003\\DollAgent\\DollAgent-4999930.pt"
+                ]
+            },
+            {
+                "steps": 5443249,
+                "file_path": "results\\dollx8_100625_003\\DollAgent\\DollAgent-5443249.onnx",
+                "reward": null,
+                "creation_time": 1749597283.060072,
+                "auxillary_file_paths": [
+                    "results\\dollx8_100625_003\\DollAgent\\DollAgent-5443249.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5443249,
+            "file_path": "results\\dollx8_100625_003\\DollAgent.onnx",
+            "reward": null,
+            "creation_time": 1749597283.060072,
+            "auxillary_file_paths": [
+                "results\\dollx8_100625_003\\DollAgent\\DollAgent-5443249.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

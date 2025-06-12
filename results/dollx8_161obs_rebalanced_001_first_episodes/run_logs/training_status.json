@@ -1,0 +1,29 @@
+{
+    "DollAgent": {
+        "checkpoints": [
+            {
+                "steps": 10254,
+                "file_path": "results\\dollx8_161obs_rebalanced_001_first_episodes\\DollAgent\\DollAgent-10254.onnx",
+                "reward": null,
+                "creation_time": 1747907116.2624304,
+                "auxillary_file_paths": [
+                    "results\\dollx8_161obs_rebalanced_001_first_episodes\\DollAgent\\DollAgent-10254.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10254,
+            "file_path": "results\\dollx8_161obs_rebalanced_001_first_episodes\\DollAgent.onnx",
+            "reward": null,
+            "creation_time": 1747907116.2624304,
+            "auxillary_file_paths": [
+                "results\\dollx8_161obs_rebalanced_001_first_episodes\\DollAgent\\DollAgent-10254.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

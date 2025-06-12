@@ -1,0 +1,2196 @@
+Mono path[0] = 'C:/Users/arron/ai tennis/Build/ai tennis_Data/Managed'
+Mono config path = 'C:/Users/arron/ai tennis/Build/MonoBleedingEdge/etc'
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Initialize engine version: 2022.3.17f1 (4fc78088f837)
+[Subsystems] Discovering subsystems at path C:/Users/arron/ai tennis/Build/ai tennis_Data/UnitySubsystems
+Forcing GfxDevice: Null
+GfxDevice: creating device client; threaded=0; jobified=0
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.097 seconds
+- Finished resetting the current domain, in  0.001 seconds
+ERROR: Shader Sprites/Default shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+Microsoft Media Foundation video decoding to texture disabled: graphics device is Null, only Direct3D 11 and Direct3D 12 (only on desktop) are supported for hardware-accelerated video decoding.
+ERROR: Shader Sprites/Mask shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Legacy Shaders/VertexLit shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Unlit/Texture shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Standard' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Standard shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Standard' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+UnloadTime: 0.546900 ms
+[Reward] pose: 0.32 | posture: 1.45
+Survivals: 0, Falls: 0
+226.9808
+[Reward] pose: 0.23 | posture: 1.46
+Survivals: 0, Falls: 1
+216.2272
+[Reward] pose: 0.23 | posture: 1.48
+Survivals: 0, Falls: 2
+168.5344
+[Reward] pose: 0.23 | posture: 1.45
+Survivals: 0, Falls: 3
+131.6815
+[Reward] pose: 0.21 | posture: 1.43
+Survivals: 0, Falls: 4
+149.405
+[Reward] pose: 0.25 | posture: 1.47
+Survivals: 0, Falls: 5
+160.7299
+[Reward] pose: 0.29 | posture: 1.49
+Survivals: 0, Falls: 6
+180.8497
+[Reward] pose: 0.22 | posture: 1.40
+Survivals: 0, Falls: 6
+181.1956
+[Reward] pose: 0.27 | posture: 1.50
+Survivals: 0, Falls: 7
+185.4164
+[Reward] pose: 0.25 | posture: 1.38
+Survivals: 0, Falls: 7
+201.8348
+[Reward] pose: 0.24 | posture: 1.48
+Survivals: 0, Falls: 8
+168.3558
+[Reward] pose: 0.25 | posture: 1.43
+Survivals: 0, Falls: 9
+153.1345
+[Reward] pose: 0.24 | posture: 1.49
+Survivals: 0, Falls: 10
+272.348
+[Reward] pose: 0.21 | posture: 1.45
+Survivals: 0, Falls: 11
+168.3205
+[Reward] pose: 0.30 | posture: 1.49
+Survivals: 0, Falls: 12
+148.9285
+[Reward] pose: 0.26 | posture: 1.48
+Survivals: 0, Falls: 13
+127.1232
+[Stats] Rolling Avg Episode Length (last 100): 87.9
+[Reward] pose: 0.30 | posture: 1.51
+Survivals: 0, Falls: 14
+219.1894
+[Reward] pose: 0.26 | posture: 1.51
+Survivals: 0, Falls: 15
+135.559
+[Reward] pose: 0.24 | posture: 1.42
+Survivals: 0, Falls: 15
+177.9362
+[Reward] pose: 0.23 | posture: 1.46
+Survivals: 0, Falls: 16
+143.6191
+[Reward] pose: 0.26 | posture: 1.45
+Survivals: 0, Falls: 17
+145.399
+[Reward] pose: 0.27 | posture: 1.50
+Survivals: 0, Falls: 18
+210.1792
+[Reward] pose: 0.28 | posture: 1.42
+Survivals: 0, Falls: 18
+122.8736
+[Reward] pose: 0.18 | posture: 1.38
+Survivals: 0, Falls: 19
+242.1259
+[Reward] pose: 0.25 | posture: 1.47
+Survivals: 0, Falls: 20
+167.486
+[Reward] pose: 0.22 | posture: 1.51
+Survivals: 0, Falls: 21
+132.2513
+[Reward] pose: 0.28 | posture: 1.48
+Survivals: 0, Falls: 22
+209.0259
+[Reward] pose: 0.21 | posture: 1.30
+Survivals: 0, Falls: 22
+197.9167
+[Reward] pose: 0.25 | posture: 1.44
+Survivals: 0, Falls: 23
+164.0514
+[Reward] pose: 0.25 | posture: 1.52
+Survivals: 0, Falls: 24
+206.3422
+[Reward] pose: 0.32 | posture: 1.40
+Survivals: 0, Falls: 24
+217.5773
+[Stats] Rolling Avg Episode Length (last 200): 87.2
+[Reward] pose: 0.22 | posture: 1.50
+Survivals: 0, Falls: 25
+171.3171
+[Reward] pose: 0.25 | posture: 1.41
+Survivals: 0, Falls: 25
+152.9587
+[Reward] pose: 0.26 | posture: 1.43
+Survivals: 0, Falls: 26
+127.5667
+[Reward] pose: 0.25 | posture: 1.52
+Survivals: 0, Falls: 27
+129.4447
+[Reward] pose: 0.29 | posture: 1.51
+Survivals: 0, Falls: 28
+213.4548
+[Reward] pose: 0.24 | posture: 1.45
+Survivals: 0, Falls: 28
+92.95821
+[Reward] pose: 0.24 | posture: 1.51
+Survivals: 0, Falls: 29
+167.5419
+[Reward] pose: 0.27 | posture: 1.49
+Survivals: 0, Falls: 30
+264.7372
+[Reward] pose: 0.22 | posture: 1.38
+Survivals: 0, Falls: 30
+171.835
+[Reward] pose: 0.25 | posture: 1.44
+Survivals: 0, Falls: 31
+144.4073
+[Reward] pose: 0.25 | posture: 1.47
+Survivals: 0, Falls: 32
+152.892
+[Reward] pose: 0.29 | posture: 1.49
+Survivals: 0, Falls: 33
+174.0686
+[Reward] pose: 0.27 | posture: 1.47
+Survivals: 0, Falls: 34
+210.5152
+[Reward] pose: 0.26 | posture: 1.49
+Survivals: 0, Falls: 35
+168.7221
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 35
+205.1871
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 36
+183.5128
+[Stats] Rolling Avg Episode Length (last 300): 88.3
+[Reward] pose: 0.21 | posture: 1.52
+Survivals: 0, Falls: 37
+232.9429
+[Reward] pose: 0.22 | posture: 1.45
+Survivals: 0, Falls: 37
+158.7888
+[Reward] pose: 0.28 | posture: 1.49
+Survivals: 0, Falls: 38
+151.741
+[Reward] pose: 0.31 | posture: 1.36
+Survivals: 0, Falls: 38
+130.8746
+[Reward] pose: 0.23 | posture: 1.42
+Survivals: 0, Falls: 39
+179.7261
+[Reward] pose: 0.27 | posture: 1.47
+Survivals: 0, Falls: 40
+199.0355
+[Reward] pose: 0.24 | posture: 1.46
+Survivals: 0, Falls: 41
+144.5918
+[Reward] pose: 0.27 | posture: 1.47
+Survivals: 0, Falls: 42
+172.2397
+[Reward] pose: 0.31 | posture: 1.47
+Survivals: 0, Falls: 42
+169.629
+[Reward] pose: 0.23 | posture: 1.49
+Survivals: 0, Falls: 43
+134.8003
+[Reward] pose: 0.24 | posture: 1.43
+Survivals: 0, Falls: 44
+124.1017
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 45
+210.4793
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 46
+142.3857
+[Reward] pose: 0.23 | posture: 1.50
+Survivals: 0, Falls: 46
+162.8859
+[Reward] pose: 0.21 | posture: 1.52
+Survivals: 0, Falls: 47
+116.1026
+[Reward] pose: 0.24 | posture: 1.37
+Survivals: 0, Falls: 47
+140.6243
+[Reward] pose: 0.22 | posture: 1.43
+Survivals: 0, Falls: 48
+122.2348
+[Stats] Rolling Avg Episode Length (last 400): 88.2
+[Reward] pose: 0.27 | posture: 1.46
+Survivals: 0, Falls: 49
+206.8133
+[Reward] pose: 0.25 | posture: 1.45
+Survivals: 0, Falls: 50
+194.3694
+[Reward] pose: 0.22 | posture: 1.46
+Survivals: 0, Falls: 51
+176.0585
+[Reward] pose: 0.26 | posture: 1.48
+Survivals: 0, Falls: 52
+221.7724
+[Reward] pose: 0.29 | posture: 1.51
+Survivals: 0, Falls: 53
+179.7634
+[Reward] pose: 0.29 | posture: 1.39
+Survivals: 0, Falls: 53
+158.0368
+[Reward] pose: 0.26 | posture: 1.46
+Survivals: 0, Falls: 54
+121.3293
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 55
+148.6813
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 56
+175.3992
+[Reward] pose: 0.21 | posture: 1.46
+Survivals: 0, Falls: 57
+184.6401
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 58
+147.5408
+[Reward] pose: 0.24 | posture: 1.44
+Survivals: 0, Falls: 59
+213.9055
+[Reward] pose: 0.25 | posture: 1.48
+Survivals: 0, Falls: 60
+176.8712
+[Reward] pose: 0.31 | posture: 1.42
+Survivals: 0, Falls: 61
+190.1382
+[Stats] Rolling Avg Episode Length (last 500): 87.3
+[Reward] pose: 0.22 | posture: 1.50
+Survivals: 0, Falls: 62
+159.1221
+[Reward] pose: 0.28 | posture: 1.45
+Survivals: 0, Falls: 63
+198.0749
+[Reward] pose: 0.21 | posture: 1.53
+Survivals: 0, Falls: 64
+190.0734
+[Reward] pose: 0.22 | posture: 1.46
+Survivals: 0, Falls: 65
+143.185
+[Reward] pose: 0.22 | posture: 1.49
+Survivals: 0, Falls: 66
+177.2183
+[Reward] pose: 0.29 | posture: 1.48
+Survivals: 0, Falls: 67
+196.2593
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 68
+149.2626
+[Reward] pose: 0.29 | posture: 1.46
+Survivals: 0, Falls: 69
+159.1075
+[Reward] pose: 0.27 | posture: 1.47
+Survivals: 0, Falls: 70
+175.2887
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 71
+185.0177
+[Reward] pose: 0.26 | posture: 1.39
+Survivals: 0, Falls: 71
+268.228
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 72
+202.5683
+[Reward] pose: 0.25 | posture: 1.47
+Survivals: 0, Falls: 72
+165.4157
+[Stats] Rolling Avg Episode Length (last 600): 86.6
+[Reward] pose: 0.20 | posture: 1.50
+Survivals: 0, Falls: 73
+113.0012
+[Reward] pose: 0.27 | posture: 1.40
+Survivals: 0, Falls: 73
+104.3618
+[Reward] pose: 0.21 | posture: 1.51
+Survivals: 0, Falls: 74
+140.8547
+[Reward] pose: 0.24 | posture: 1.49
+Survivals: 0, Falls: 75
+200.4448
+[Reward] pose: 0.22 | posture: 1.44
+Survivals: 0, Falls: 76
+166.1369
+[Reward] pose: 0.28 | posture: 1.51
+Survivals: 0, Falls: 77
+173.8428
+[Reward] pose: 0.30 | posture: 1.47
+Survivals: 0, Falls: 77
+197.8211
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 78
+169.53
+[Reward] pose: 0.24 | posture: 1.39
+Survivals: 0, Falls: 78
+192.9743
+[Reward] pose: 0.27 | posture: 1.51
+Survivals: 0, Falls: 79
+202.5912
+[Reward] pose: 0.24 | posture: 1.41
+Survivals: 0, Falls: 79
+205.9729
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 80
+185.5673
+[Reward] pose: 0.25 | posture: 1.47
+Survivals: 0, Falls: 81
+104.9047
+[Reward] pose: 0.27 | posture: 1.49
+Survivals: 0, Falls: 82
+204.117
+[Reward] pose: 0.29 | posture: 1.47
+Survivals: 0, Falls: 83
+184.7912
+[Reward] pose: 0.24 | posture: 1.47
+Survivals: 0, Falls: 84
+169.1025
+[Stats] Rolling Avg Episode Length (last 700): 86.5
+[Reward] pose: 0.30 | posture: 1.46
+Survivals: 0, Falls: 85
+242.034
+[Reward] pose: 0.22 | posture: 1.47
+Survivals: 0, Falls: 86
+145.655
+[Reward] pose: 0.25 | posture: 1.46
+Survivals: 0, Falls: 87
+138.854
+[Reward] pose: 0.24 | posture: 1.51
+Survivals: 0, Falls: 88
+113.8531
+[Reward] pose: 0.22 | posture: 1.36
+Survivals: 0, Falls: 88
+217.3645
+[Reward] pose: 0.27 | posture: 1.47
+Survivals: 0, Falls: 89
+237.4766
+[Reward] pose: 0.24 | posture: 1.45
+Survivals: 0, Falls: 90
+160.8615
+[Reward] pose: 0.26 | posture: 1.42
+Survivals: 0, Falls: 91
+170.6354
+[Reward] pose: 0.28 | posture: 1.49
+Survivals: 0, Falls: 92
+248.9251
+[Reward] pose: 0.25 | posture: 1.42
+Survivals: 0, Falls: 93
+152.597
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 94
+154.6488
+[Reward] pose: 0.26 | posture: 1.45
+Survivals: 0, Falls: 94
+178.5279
+[Reward] pose: 0.30 | posture: 1.47
+Survivals: 0, Falls: 95
+181.1062
+[Reward] pose: 0.27 | posture: 1.41
+Survivals: 0, Falls: 96
+201.7307
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 97
+230.5031
+[Reward] pose: 0.29 | posture: 1.49
+Survivals: 0, Falls: 98
+167.9286
+[Stats] Rolling Avg Episode Length (last 800): 86.9
+[Reward] pose: 0.28 | posture: 1.47
+Survivals: 0, Falls: 99
+171.5805
+[Reward] pose: 0.22 | posture: 1.46
+Survivals: 0, Falls: 100
+133.4528
+[Reward] pose: 0.27 | posture: 1.45
+Survivals: 0, Falls: 101
+178.7958
+[Reward] pose: 0.24 | posture: 1.48
+Survivals: 0, Falls: 102
+198.9833
+[Reward] pose: 0.21 | posture: 1.41
+Survivals: 0, Falls: 102
+137.0855
+[Reward] pose: 0.21 | posture: 1.51
+Survivals: 0, Falls: 103
+121.5545
+[Reward] pose: 0.19 | posture: 1.53
+Survivals: 0, Falls: 104
+121.8355
+[Reward] pose: 0.23 | posture: 1.49
+Survivals: 0, Falls: 105
+152.2435
+[Reward] pose: 0.29 | posture: 1.50
+Survivals: 0, Falls: 106
+236.5109
+[Reward] pose: 0.24 | posture: 1.53
+Survivals: 0, Falls: 107
+188.9401
+[Reward] pose: 0.22 | posture: 1.50
+Survivals: 0, Falls: 108
+258.5786
+[Reward] pose: 0.26 | posture: 1.39
+Survivals: 0, Falls: 108
+144.0456
+[Reward] pose: 0.24 | posture: 1.45
+Survivals: 0, Falls: 109
+151.1618
+[Stats] Rolling Avg Episode Length (last 900): 86.8
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 110
+203.8311
+[Reward] pose: 0.25 | posture: 1.41
+Survivals: 0, Falls: 110
+166.1993
+[Reward] pose: 0.20 | posture: 1.48
+Survivals: 0, Falls: 111
+210.0435
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 112
+148.2883
+[Reward] pose: 0.22 | posture: 1.41
+Survivals: 0, Falls: 113
+211.0465
+[Reward] pose: 0.28 | posture: 1.47
+Survivals: 0, Falls: 114
+171.4518
+[Reward] pose: 0.30 | posture: 1.48
+Survivals: 0, Falls: 115
+239.3208
+[Reward] pose: 0.24 | posture: 1.52
+Survivals: 0, Falls: 116
+164.9214
+[Reward] pose: 0.29 | posture: 1.41
+Survivals: 0, Falls: 116
+154.5846
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 117
+163.0872
+[Reward] pose: 0.25 | posture: 1.45
+Survivals: 0, Falls: 118
+203.5854
+[Reward] pose: 0.24 | posture: 1.51
+Survivals: 0, Falls: 119
+127.6478
+[Reward] pose: 0.28 | posture: 1.41
+Survivals: 0, Falls: 120
+188.447
+[Reward] pose: 0.29 | posture: 1.42
+Survivals: 0, Falls: 121
+197.2449
+[Reward] pose: 0.26 | posture: 1.49
+Survivals: 0, Falls: 122
+207.8522
+[Reward] pose: 0.24 | posture: 1.47
+Survivals: 0, Falls: 122
+191.5716
+[Stats] Rolling Avg Episode Length (last 1000): 86.9
+[Reward] pose: 0.22 | posture: 1.49
+Survivals: 0, Falls: 123
+181.5204
+[Reward] pose: 0.24 | posture: 1.48
+Survivals: 0, Falls: 124
+214.6793
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 125
+173.4365
+[Reward] pose: 0.24 | posture: 1.42
+Survivals: 0, Falls: 126
+198.7234
+[Reward] pose: 0.29 | posture: 1.50
+Survivals: 0, Falls: 127
+267.5985
+[Reward] pose: 0.24 | posture: 1.48
+Survivals: 0, Falls: 128
+145.8376
+[Reward] pose: 0.22 | posture: 1.44
+Survivals: 0, Falls: 129
+120.7616
+[Reward] pose: 0.31 | posture: 1.45
+Survivals: 0, Falls: 130
+273.5671
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 131
+244.0155
+[Reward] pose: 0.21 | posture: 1.52
+Survivals: 0, Falls: 132
+120.3489
+[Reward] pose: 0.25 | posture: 1.36
+Survivals: 0, Falls: 132
+169.8324
+[Reward] pose: 0.20 | posture: 1.51
+Survivals: 0, Falls: 133
+126.3905
+[Reward] pose: 0.22 | posture: 1.38
+Survivals: 0, Falls: 133
+122.8834
+[Reward] pose: 0.26 | posture: 1.48
+Survivals: 0, Falls: 134
+149.0146
+[Reward] pose: 0.25 | posture: 1.47
+Survivals: 0, Falls: 135
+251.4854
+[Stats] Rolling Avg Episode Length (last 1000): 87.0
+[Reward] pose: 0.23 | posture: 1.43
+Survivals: 0, Falls: 136
+144.5858
+[Reward] pose: 0.18 | posture: 1.46
+Survivals: 0, Falls: 137
+144.6038
+[Reward] pose: 0.31 | posture: 1.45
+Survivals: 0, Falls: 138
+276.6008
+[Reward] pose: 0.27 | posture: 1.49
+Survivals: 0, Falls: 139
+144.4874
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 140
+193.5472
+[Reward] pose: 0.23 | posture: 1.44
+Survivals: 0, Falls: 140
+128.7215
+[Reward] pose: 0.29 | posture: 1.53
+Survivals: 0, Falls: 141
+197.3407
+[Reward] pose: 0.23 | posture: 1.38
+Survivals: 0, Falls: 141
+153.9326
+[Reward] pose: 0.20 | posture: 1.51
+Survivals: 0, Falls: 142
+166.5221
+[Reward] pose: 0.21 | posture: 1.52
+Survivals: 0, Falls: 143
+176.8477
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 144
+165.7346
+[Reward] pose: 0.28 | posture: 1.47
+Survivals: 0, Falls: 144
+158.8047
+[Reward] pose: 0.24 | posture: 1.43
+Survivals: 0, Falls: 145
+209.5699
+[Reward] pose: 0.24 | posture: 1.51
+Survivals: 0, Falls: 146
+164.7316
+[Reward] pose: 0.30 | posture: 1.45
+Survivals: 0, Falls: 146
+192.8822
+[Reward] pose: 0.26 | posture: 1.49
+Survivals: 0, Falls: 147
+201.2246
+[Stats] Rolling Avg Episode Length (last 1000): 87.3
+[Reward] pose: 0.19 | posture: 1.50
+Survivals: 0, Falls: 148
+169.8767
+[Reward] pose: 0.33 | posture: 1.42
+Survivals: 0, Falls: 149
+278.0781
+[Reward] pose: 0.22 | posture: 1.47
+Survivals: 0, Falls: 150
+202.0765
+[Reward] pose: 0.22 | posture: 1.49
+Survivals: 0, Falls: 151
+136.4458
+[Reward] pose: 0.27 | posture: 1.48
+Survivals: 0, Falls: 152
+151.1667
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 153
+239.4021
+[Reward] pose: 0.24 | posture: 1.48
+Survivals: 0, Falls: 154
+132.9856
+[Reward] pose: 0.24 | posture: 1.48
+Survivals: 0, Falls: 155
+163.3758
+[Reward] pose: 0.25 | posture: 1.43
+Survivals: 0, Falls: 156
+165.0624
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 157
+152.2667
+[Reward] pose: 0.24 | posture: 1.49
+Survivals: 0, Falls: 157
+214.1166
+[Reward] pose: 0.24 | posture: 1.46
+Survivals: 0, Falls: 158
+161.9663
+[Reward] pose: 0.22 | posture: 1.39
+Survivals: 0, Falls: 158
+176.8814
+[Reward] pose: 0.27 | posture: 1.48
+Survivals: 0, Falls: 159
+141.6038
+[Reward] pose: 0.22 | posture: 1.42
+Survivals: 0, Falls: 159
+164.808
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 160
+185.437
+[Stats] Rolling Avg Episode Length (last 1000): 87.4
+[Reward] pose: 0.29 | posture: 1.45
+Survivals: 0, Falls: 161
+198.1713
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 162
+212.2786
+[Reward] pose: 0.22 | posture: 1.51
+Survivals: 0, Falls: 163
+211.3815
+[Reward] pose: 0.23 | posture: 1.41
+Survivals: 0, Falls: 163
+170.7735
+[Reward] pose: 0.26 | posture: 1.48
+Survivals: 0, Falls: 164
+130.6442
+[Reward] pose: 0.22 | posture: 1.49
+Survivals: 0, Falls: 164
+198.3094
+[Reward] pose: 0.21 | posture: 1.50
+Survivals: 0, Falls: 165
+137.1091
+[Reward] pose: 0.20 | posture: 1.49
+Survivals: 0, Falls: 166
+133.417
+[Reward] pose: 0.27 | posture: 1.51
+Survivals: 0, Falls: 166
+224.1693
+[Reward] pose: 0.28 | posture: 1.49
+Survivals: 0, Falls: 167
+171.8364
+[Reward] pose: 0.23 | posture: 1.51
+Survivals: 0, Falls: 168
+201.2349
+[Reward] pose: 0.31 | posture: 1.48
+Survivals: 0, Falls: 168
+172.9553
+[Reward] pose: 0.28 | posture: 1.47
+Survivals: 0, Falls: 169
+153.2221
+[Reward] pose: 0.26 | posture: 1.42
+Survivals: 0, Falls: 170
+201.3685
+[Reward] pose: 0.21 | posture: 1.50
+Survivals: 0, Falls: 171
+177.5862
+[Stats] Rolling Avg Episode Length (last 1000): 87.9
+[Reward] pose: 0.26 | posture: 1.51
+Survivals: 0, Falls: 172
+116.9097
+[Reward] pose: 0.27 | posture: 1.48
+Survivals: 0, Falls: 172
+186.9276
+[Reward] pose: 0.25 | posture: 1.47
+Survivals: 0, Falls: 173
+115.8162
+[Reward] pose: 0.29 | posture: 1.52
+Survivals: 0, Falls: 174
+191.5245
+[Reward] pose: 0.28 | posture: 1.49
+Survivals: 0, Falls: 174
+168.7028
+[Reward] pose: 0.24 | posture: 1.44
+Survivals: 0, Falls: 175
+175.6686
+[Reward] pose: 0.23 | posture: 1.45
+Survivals: 0, Falls: 176
+242.7249
+[Reward] pose: 0.27 | posture: 1.51
+Survivals: 0, Falls: 177
+272.7293
+[Reward] pose: 0.24 | posture: 1.42
+Survivals: 0, Falls: 177
+192.331
+[Reward] pose: 0.24 | posture: 1.49
+Survivals: 0, Falls: 178
+277.6388
+[Reward] pose: 0.27 | posture: 1.50
+Survivals: 0, Falls: 179
+184.1725
+[Reward] pose: 0.27 | posture: 1.38
+Survivals: 0, Falls: 179
+195.0857
+[Reward] pose: 0.23 | posture: 1.52
+Survivals: 0, Falls: 180
+168.4779
+[Reward] pose: 0.22 | posture: 1.41
+Survivals: 0, Falls: 180
+200.4324
+[Reward] pose: 0.26 | posture: 1.51
+Survivals: 0, Falls: 181
+256.9319
+[Reward] pose: 0.23 | posture: 1.49
+Survivals: 0, Falls: 182
+120.7983
+[Reward] pose: 0.28 | posture: 1.48
+Survivals: 0, Falls: 183
+292.4028
+[Reward] pose: 0.21 | posture: 1.50
+Survivals: 0, Falls: 184
+258.2489
+[Stats] Rolling Avg Episode Length (last 1000): 89.1
+[Reward] pose: 0.26 | posture: 1.48
+Survivals: 0, Falls: 185
+168.2632
+[Reward] pose: 0.24 | posture: 1.38
+Survivals: 0, Falls: 185
+163.0303
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 186
+175.9113
+[Reward] pose: 0.24 | posture: 1.52
+Survivals: 0, Falls: 187
+109.6533
+[Reward] pose: 0.24 | posture: 1.48
+Survivals: 0, Falls: 188
+185.4773
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 189
+154.6971
+[Reward] pose: 0.20 | posture: 1.39
+Survivals: 0, Falls: 189
+191.2633
+[Reward] pose: 0.23 | posture: 1.51
+Survivals: 0, Falls: 190
+138.7859
+[Reward] pose: 0.24 | posture: 1.47
+Survivals: 0, Falls: 191
+160.2466
+[Reward] pose: 0.19 | posture: 1.52
+Survivals: 0, Falls: 192
+145.5737
+[Reward] pose: 0.21 | posture: 1.46
+Survivals: 0, Falls: 192
+157.9407
+[Reward] pose: 0.21 | posture: 1.51
+Survivals: 0, Falls: 193
+173.2849
+[Reward] pose: 0.24 | posture: 1.42
+Survivals: 0, Falls: 194
+215.1168
+[Reward] pose: 0.27 | posture: 1.51
+Survivals: 0, Falls: 195
+302.1823
+[Reward] pose: 0.20 | posture: 1.44
+Survivals: 0, Falls: 196
+227.54
+[Stats] Rolling Avg Episode Length (last 1000): 89.7
+[Reward] pose: 0.26 | posture: 1.43
+Survivals: 0, Falls: 197
+138.3928
+[Reward] pose: 0.24 | posture: 1.51
+Survivals: 0, Falls: 198
+162.3941
+[Reward] pose: 0.25 | posture: 1.45
+Survivals: 0, Falls: 199
+112.3972
+[Reward] pose: 0.24 | posture: 1.51
+Survivals: 0, Falls: 200
+163.6368
+[Reward] pose: 0.26 | posture: 1.42
+Survivals: 0, Falls: 200
+233.8641
+[Reward] pose: 0.25 | posture: 1.45
+Survivals: 0, Falls: 201
+106.8798
+[Reward] pose: 0.23 | posture: 1.50
+Survivals: 0, Falls: 202
+211.8506
+[Reward] pose: 0.23 | posture: 1.49
+Survivals: 0, Falls: 203
+318.4788
+[Reward] pose: 0.22 | posture: 1.50
+Survivals: 0, Falls: 204
+211.5768
+[Reward] pose: 0.22 | posture: 1.37
+Survivals: 0, Falls: 204
+173.1414
+[Reward] pose: 0.23 | posture: 1.50
+Survivals: 0, Falls: 205
+118.8997
+[Reward] pose: 0.24 | posture: 1.52
+Survivals: 0, Falls: 206
+176.9436
+[Reward] pose: 0.25 | posture: 1.48
+Survivals: 0, Falls: 206
+173.8703
+[Reward] pose: 0.30 | posture: 1.46
+Survivals: 0, Falls: 207
+210.1387
+[Reward] pose: 0.27 | posture: 1.45
+Survivals: 0, Falls: 208
+248.9158
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 209
+212.321
+[Reward] pose: 0.23 | posture: 1.52
+Survivals: 0, Falls: 210
+165.6092
+[Stats] Rolling Avg Episode Length (last 1000): 90.5
+[Reward] pose: 0.30 | posture: 1.43
+Survivals: 0, Falls: 210
+178.0863
+[Reward] pose: 0.27 | posture: 1.51
+Survivals: 0, Falls: 211
+164.8235
+[Reward] pose: 0.30 | posture: 1.49
+Survivals: 0, Falls: 212
+344.6342
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 213
+170.8908
+[Reward] pose: 0.25 | posture: 1.45
+Survivals: 0, Falls: 214
+184.0824
+[Reward] pose: 0.26 | posture: 1.52
+Survivals: 0, Falls: 215
+197.8654
+[Reward] pose: 0.23 | posture: 1.49
+Survivals: 0, Falls: 215
+149.9144
+[Reward] pose: 0.22 | posture: 1.47
+Survivals: 0, Falls: 216
+199.3743
+[Reward] pose: 0.24 | posture: 1.53
+Survivals: 0, Falls: 217
+230.4045
+[Reward] pose: 0.22 | posture: 1.45
+Survivals: 0, Falls: 218
+140.1731
+[Reward] pose: 0.26 | posture: 1.40
+Survivals: 0, Falls: 219
+131.2721
+[Reward] pose: 0.26 | posture: 1.51
+Survivals: 0, Falls: 220
+284.0161
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 221
+241.0599
+[Reward] pose: 0.26 | posture: 1.51
+Survivals: 0, Falls: 222
+292.7355
+[Reward] pose: 0.28 | posture: 1.40
+Survivals: 0, Falls: 222
+221.1468
+[Stats] Rolling Avg Episode Length (last 1000): 90.9
+[Reward] pose: 0.28 | posture: 1.49
+Survivals: 0, Falls: 223
+209.5121
+[Reward] pose: 0.28 | posture: 1.47
+Survivals: 0, Falls: 224
+213.4787
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 225
+195.374
+[Reward] pose: 0.24 | posture: 1.36
+Survivals: 0, Falls: 225
+164.5325
+[Reward] pose: 0.28 | posture: 1.48
+Survivals: 0, Falls: 226
+161.7491
+[Reward] pose: 0.25 | posture: 1.43
+Survivals: 0, Falls: 227
+159.3383
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 228
+157.9592
+[Reward] pose: 0.21 | posture: 1.51
+Survivals: 0, Falls: 229
+150.7565
+[Reward] pose: 0.20 | posture: 1.37
+Survivals: 0, Falls: 229
+172.8868
+[Reward] pose: 0.22 | posture: 1.42
+Survivals: 0, Falls: 230
+171.3473
+[Reward] pose: 0.21 | posture: 1.46
+Survivals: 0, Falls: 231
+188.3854
+[Reward] pose: 0.24 | posture: 1.49
+Survivals: 0, Falls: 232
+231.4167
+[Reward] pose: 0.28 | posture: 1.42
+Survivals: 0, Falls: 233
+232.6042
+[Reward] pose: 0.23 | posture: 1.52
+Survivals: 0, Falls: 234
+242.0432
+[Reward] pose: 0.23 | posture: 1.39
+Survivals: 0, Falls: 234
+151.165
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 235
+129.6653
+[Reward] pose: 0.26 | posture: 1.45
+Survivals: 0, Falls: 235
+208.7759
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 236
+134.5621
+[Reward] pose: 0.23 | posture: 1.39
+Survivals: 0, Falls: 236
+190.4989
+[Stats] Rolling Avg Episode Length (last 1000): 92.0
+[Reward] pose: 0.24 | posture: 1.49
+Survivals: 0, Falls: 237
+137.2186
+[Reward] pose: 0.26 | posture: 1.41
+Survivals: 0, Falls: 237
+145.3816
+[Reward] pose: 0.25 | posture: 1.52
+Survivals: 0, Falls: 238
+215.4444
+[Reward] pose: 0.25 | posture: 1.49
+Survivals: 0, Falls: 238
+151.4765
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 239
+220.3367
+[Reward] pose: 0.21 | posture: 1.51
+Survivals: 0, Falls: 240
+205.9951
+[Reward] pose: 0.24 | posture: 1.45
+Survivals: 0, Falls: 240
+201.5881
+[Reward] pose: 0.29 | posture: 1.50
+Survivals: 0, Falls: 241
+180.3743
+[Reward] pose: 0.28 | posture: 1.45
+Survivals: 0, Falls: 242
+189.0165
+[Reward] pose: 0.23 | posture: 1.45
+Survivals: 0, Falls: 243
+199.9557
+[Reward] pose: 0.28 | posture: 1.48
+Survivals: 0, Falls: 244
+136.5642
+[Reward] pose: 0.21 | posture: 1.44
+Survivals: 0, Falls: 245
+240.403
+[Reward] pose: 0.24 | posture: 1.51
+Survivals: 0, Falls: 246
+137.0873
+[Reward] pose: 0.25 | posture: 1.42
+Survivals: 0, Falls: 246
+149.3274
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 247
+158.7859
+[Reward] pose: 0.21 | posture: 1.43
+Survivals: 0, Falls: 247
+140.1168
+[Reward] pose: 0.22 | posture: 1.52
+Survivals: 0, Falls: 248
+153.5208
+[Reward] pose: 0.23 | posture: 1.50
+Survivals: 0, Falls: 248
+133.5143
+[Stats] Rolling Avg Episode Length (last 1000): 92.6
+[Reward] pose: 0.28 | posture: 1.45
+Survivals: 0, Falls: 249
+160.4382
+[Reward] pose: 0.23 | posture: 1.48
+Survivals: 0, Falls: 250
+148.3117
+[Reward] pose: 0.24 | posture: 1.52
+Survivals: 0, Falls: 251
+182.7141
+[Reward] pose: 0.24 | posture: 1.46
+Survivals: 0, Falls: 252
+174.4002
+[Reward] pose: 0.23 | posture: 1.48
+Survivals: 0, Falls: 253
+289.5481
+[Reward] pose: 0.25 | posture: 1.49
+Survivals: 0, Falls: 254
+188.2218
+[Reward] pose: 0.26 | posture: 1.37
+Survivals: 0, Falls: 254
+123.8511
+[Reward] pose: 0.23 | posture: 1.52
+Survivals: 0, Falls: 255
+134.2266
+[Reward] pose: 0.27 | posture: 1.52
+Survivals: 0, Falls: 255
+167.246
+[Reward] pose: 0.23 | posture: 1.42
+Survivals: 0, Falls: 255
+190.3446
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 256
+172.2966
+[Reward] pose: 0.24 | posture: 1.41
+Survivals: 0, Falls: 256
+187.1029
+[Reward] pose: 0.27 | posture: 1.49
+Survivals: 0, Falls: 257
+170.6299
+[Reward] pose: 0.26 | posture: 1.49
+Survivals: 0, Falls: 258
+193.8665
+[Reward] pose: 0.26 | posture: 1.48
+Survivals: 0, Falls: 259
+234.7036
+[Reward] pose: 0.24 | posture: 1.43
+Survivals: 0, Falls: 260
+124.2435
+[Reward] pose: 0.23 | posture: 1.51
+Survivals: 0, Falls: 261
+194.5842
+[Stats] Rolling Avg Episode Length (last 1000): 93.7
+[Reward] pose: 0.23 | posture: 1.46
+Survivals: 0, Falls: 262
+286.9892
+[Reward] pose: 0.23 | posture: 1.51
+Survivals: 0, Falls: 263
+207.9876
+[Reward] pose: 0.22 | posture: 1.39
+Survivals: 0, Falls: 263
+191.2705
+[Reward] pose: 0.22 | posture: 1.51
+Survivals: 0, Falls: 264
+310.9976
+[Reward] pose: 0.27 | posture: 1.37
+Survivals: 0, Falls: 264
+174.2608
+[Reward] pose: 0.25 | posture: 1.46
+Survivals: 0, Falls: 265
+180.5281
+[Reward] pose: 0.31 | posture: 1.51
+Survivals: 0, Falls: 266
+179.5048
+[Reward] pose: 0.26 | posture: 1.43
+Survivals: 0, Falls: 266
+115.6623
+[Reward] pose: 0.23 | posture: 1.53
+Survivals: 0, Falls: 267
+155.6784
+[Reward] pose: 0.23 | posture: 1.39
+Survivals: 0, Falls: 267
+161.0694
+[Reward] pose: 0.22 | posture: 1.44
+Survivals: 0, Falls: 268
+134.4579
+[Reward] pose: 0.26 | posture: 1.53
+Survivals: 0, Falls: 269
+160.0556
+[Reward] pose: 0.29 | posture: 1.43
+Survivals: 0, Falls: 269
+204.6603
+[Reward] pose: 0.24 | posture: 1.52
+Survivals: 0, Falls: 270
+161.0739
+[Reward] pose: 0.25 | posture: 1.52
+Survivals: 0, Falls: 271
+169.812
+[Reward] pose: 0.19 | posture: 1.41
+Survivals: 0, Falls: 271
+210.3226
+[Reward] pose: 0.27 | posture: 1.47
+Survivals: 0, Falls: 272
+147.0294
+[Reward] pose: 0.27 | posture: 1.37
+Survivals: 0, Falls: 272
+235.6508
+[Reward] pose: 0.25 | posture: 1.48
+Survivals: 0, Falls: 273
+228.542
+[Reward] pose: 0.22 | posture: 1.45
+Survivals: 0, Falls: 273
+221.95
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 274
+179.0268
+[Stats] Rolling Avg Episode Length (last 1000): 94.4
+[Reward] pose: 0.26 | posture: 1.49
+Survivals: 0, Falls: 275
+175.5253
+[Reward] pose: 0.23 | posture: 1.46
+Survivals: 0, Falls: 276
+199.3489
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 277
+179.9753
+[Reward] pose: 0.26 | posture: 1.41
+Survivals: 0, Falls: 277
+195.073
+[Reward] pose: 0.23 | posture: 1.50
+Survivals: 0, Falls: 278
+287.6789
+[Reward] pose: 0.31 | posture: 1.47
+Survivals: 0, Falls: 279
+214.9021
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 280
+282.7769
+[Reward] pose: 0.16 | posture: 1.54
+Survivals: 0, Falls: 281
+175.2029
+[Reward] pose: 0.27 | posture: 1.46
+Survivals: 0, Falls: 281
+207.9763
+[Reward] pose: 0.20 | posture: 1.53
+Survivals: 0, Falls: 282
+235.0203
+[Reward] pose: 0.23 | posture: 1.50
+Survivals: 0, Falls: 283
+166.9971
+[Reward] pose: 0.26 | posture: 1.38
+Survivals: 0, Falls: 283
+199.6627
+[Reward] pose: 0.29 | posture: 1.50
+Survivals: 0, Falls: 284
+136.571
+[Reward] pose: 0.24 | posture: 1.47
+Survivals: 0, Falls: 284
+222.5245
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 285
+186.4453
+[Reward] pose: 0.28 | posture: 1.40
+Survivals: 0, Falls: 285
+267.6814
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 286
+174.142
+[Reward] pose: 0.30 | posture: 1.37
+Survivals: 0, Falls: 286
+198.6388
+[Stats] Rolling Avg Episode Length (last 1000): 95.1
+[Reward] pose: 0.27 | posture: 1.54
+Survivals: 0, Falls: 287
+127.3312
+[Reward] pose: 0.21 | posture: 1.37
+Survivals: 0, Falls: 287
+152.9385
+[Reward] pose: 0.26 | posture: 1.52
+Survivals: 0, Falls: 288
+135.8479
+[Reward] pose: 0.25 | posture: 1.49
+Survivals: 0, Falls: 288
+115.3762
+[Reward] pose: 0.30 | posture: 1.45
+Survivals: 0, Falls: 289
+163.7175
+[Reward] pose: 0.27 | posture: 1.49
+Survivals: 0, Falls: 290
+213.9375
+[Reward] pose: 0.30 | posture: 1.48
+Survivals: 0, Falls: 291
+173.2695
+[Reward] pose: 0.30 | posture: 1.49
+Survivals: 0, Falls: 291
+210.53
+[Reward] pose: 0.24 | posture: 1.46
+Survivals: 0, Falls: 292
+109.7585
+[Reward] pose: 0.24 | posture: 1.40
+Survivals: 0, Falls: 293
+179.7626
+[Reward] pose: 0.26 | posture: 1.52
+Survivals: 0, Falls: 294
+188.7083
+[Reward] pose: 0.26 | posture: 1.45
+Survivals: 0, Falls: 294
+223.852
+[Reward] pose: 0.28 | posture: 1.48
+Survivals: 0, Falls: 295
+170.5086
+[Reward] pose: 0.28 | posture: 1.52
+Survivals: 0, Falls: 296
+183.022
+[Reward] pose: 0.23 | posture: 1.39
+Survivals: 0, Falls: 296
+210.3286
+[Reward] pose: 0.23 | posture: 1.46
+Survivals: 0, Falls: 297
+230.9289
+[Reward] pose: 0.24 | posture: 1.54
+Survivals: 0, Falls: 298
+270.528
+[Reward] pose: 0.22 | posture: 1.48
+Survivals: 0, Falls: 299
+199.6452
+[Stats] Rolling Avg Episode Length (last 1000): 95.6
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 300
+209.4858
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 301
+171.9875
+[Reward] pose: 0.21 | posture: 1.53
+Survivals: 0, Falls: 302
+233.9865
+[Reward] pose: 0.27 | posture: 1.51
+Survivals: 0, Falls: 303
+190.9162
+[Reward] pose: 0.21 | posture: 1.49
+Survivals: 0, Falls: 304
+204.009
+[Reward] pose: 0.20 | posture: 1.49
+Survivals: 0, Falls: 305
+174.4485
+[Reward] pose: 0.24 | posture: 1.46
+Survivals: 0, Falls: 306
+219.1218
+[Reward] pose: 0.27 | posture: 1.49
+Survivals: 0, Falls: 307
+210.1759
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 308
+167.8861
+[Reward] pose: 0.24 | posture: 1.53
+Survivals: 0, Falls: 309
+114.7904
+[Reward] pose: 0.26 | posture: 1.39
+Survivals: 0, Falls: 309
+154.441
+[Reward] pose: 0.24 | posture: 1.48
+Survivals: 0, Falls: 310
+173.3377
+[Reward] pose: 0.29 | posture: 1.48
+Survivals: 0, Falls: 310
+149.7904
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 311
+114.7241
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 311
+205.6587
+[Reward] pose: 0.31 | posture: 1.48
+Survivals: 0, Falls: 312
+264.5806
+[Stats] Rolling Avg Episode Length (last 1000): 95.8
+[Reward] pose: 0.21 | posture: 1.43
+Survivals: 0, Falls: 312
+127.8579
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 313
+222.364
+[Reward] pose: 0.23 | posture: 1.51
+Survivals: 0, Falls: 313
+240.2437
+[Reward] pose: 0.25 | posture: 1.44
+Survivals: 0, Falls: 314
+150.4311
+[Reward] pose: 0.26 | posture: 1.51
+Survivals: 0, Falls: 315
+324.2902
+[Reward] pose: 0.23 | posture: 1.51
+Survivals: 0, Falls: 316
+206.5228
+[Reward] pose: 0.25 | posture: 1.48
+Survivals: 0, Falls: 316
+142.343
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 317
+260.0968
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 318
+207.583
+[Reward] pose: 0.29 | posture: 1.52
+Survivals: 0, Falls: 319
+204.2515
+[Reward] pose: 0.22 | posture: 1.52
+Survivals: 0, Falls: 320
+144.7409
+[Reward] pose: 0.24 | posture: 1.40
+Survivals: 0, Falls: 320
+228.9942
+[Reward] pose: 0.24 | posture: 1.52
+Survivals: 0, Falls: 321
+138.1699
+[Reward] pose: 0.30 | posture: 1.49
+Survivals: 0, Falls: 322
+187.4673
+[Reward] pose: 0.21 | posture: 1.42
+Survivals: 0, Falls: 323
+248.3817
+[Reward] pose: 0.23 | posture: 1.51
+Survivals: 0, Falls: 324
+203.287
+[Reward] pose: 0.19 | posture: 1.35
+Survivals: 0, Falls: 324
+242.9501
+[Stats] Rolling Avg Episode Length (last 1000): 96.6
+[Reward] pose: 0.23 | posture: 1.51
+Survivals: 0, Falls: 325
+114.0269
+[Reward] pose: 0.26 | posture: 1.49
+Survivals: 0, Falls: 325
+242.0385
+[Reward] pose: 0.24 | posture: 1.51
+Survivals: 0, Falls: 325
+167.6086
+[Reward] pose: 0.22 | posture: 1.35
+Survivals: 0, Falls: 325
+145.7765
+[Reward] pose: 0.24 | posture: 1.48
+Survivals: 0, Falls: 326
+245.9618
+[Reward] pose: 0.29 | posture: 1.51
+Survivals: 0, Falls: 327
+188.5059
+[Reward] pose: 0.31 | posture: 1.47
+Survivals: 0, Falls: 328
+145.4326
+[Reward] pose: 0.25 | posture: 1.48
+Survivals: 0, Falls: 329
+180.3084
+[Reward] pose: 0.21 | posture: 1.50
+Survivals: 0, Falls: 330
+232.6153
+[Reward] pose: 0.26 | posture: 1.44
+Survivals: 0, Falls: 330
+274.3142
+[Reward] pose: 0.28 | posture: 1.48
+Survivals: 0, Falls: 331
+131.7253
+[Reward] pose: 0.23 | posture: 1.46
+Survivals: 0, Falls: 331
+170.2056
+[Reward] pose: 0.25 | posture: 1.45
+Survivals: 0, Falls: 332
+140.3573
+[Reward] pose: 0.22 | posture: 1.47
+Survivals: 0, Falls: 333
+233.3851
+[Reward] pose: 0.28 | posture: 1.51
+Survivals: 0, Falls: 334
+205.1641
+[Reward] pose: 0.25 | posture: 1.43
+Survivals: 0, Falls: 334
+177.4282
+[Reward] pose: 0.28 | posture: 1.50
+Survivals: 0, Falls: 335
+161.4237
+[Stats] Rolling Avg Episode Length (last 1000): 96.8
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 336
+141.5057
+[Reward] pose: 0.27 | posture: 1.46
+Survivals: 0, Falls: 336
+187.2702
+[Reward] pose: 0.26 | posture: 1.51
+Survivals: 0, Falls: 337
+164.0353
+[Reward] pose: 0.28 | posture: 1.40
+Survivals: 0, Falls: 337
+232.4654
+[Reward] pose: 0.28 | posture: 1.52
+Survivals: 0, Falls: 338
+257.2267
+[Reward] pose: 0.24 | posture: 1.36
+Survivals: 0, Falls: 338
+166.0129
+[Reward] pose: 0.25 | posture: 1.52
+Survivals: 0, Falls: 339
+146.5444
+[Reward] pose: 0.32 | posture: 1.44
+Survivals: 0, Falls: 339
+178.7974
+[Reward] pose: 0.24 | posture: 1.49
+Survivals: 0, Falls: 340
+157.9619
+[Reward] pose: 0.30 | posture: 1.49
+Survivals: 0, Falls: 341
+219.9673
+[Reward] pose: 0.23 | posture: 1.44
+Survivals: 0, Falls: 341
+229.5322
+[Reward] pose: 0.27 | posture: 1.46
+Survivals: 0, Falls: 342
+167.1387
+[Reward] pose: 0.17 | posture: 1.38
+Survivals: 0, Falls: 342
+150.3176
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 343
+184.578
+[Reward] pose: 0.22 | posture: 1.38
+Survivals: 0, Falls: 343
+161.2483
+[Reward] pose: 0.19 | posture: 1.51
+Survivals: 0, Falls: 344
+189.8908
+[Reward] pose: 0.28 | posture: 1.52
+Survivals: 0, Falls: 345
+122.2966
+[Reward] pose: 0.26 | posture: 1.39
+Survivals: 0, Falls: 345
+172.1588
+[Reward] pose: 0.24 | posture: 1.51
+Survivals: 0, Falls: 346
+184.8935
+[Reward] pose: 0.22 | posture: 1.40
+Survivals: 0, Falls: 346
+262.9103
+[Stats] Rolling Avg Episode Length (last 1000): 97.2
+[Reward] pose: 0.28 | posture: 1.45
+Survivals: 0, Falls: 347
+173.9929
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 348
+140.4389
+[Reward] pose: 0.24 | posture: 1.49
+Survivals: 0, Falls: 348
+238.101
+[Reward] pose: 0.23 | posture: 1.51
+Survivals: 0, Falls: 349
+154.2303
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 350
+241.7977
+[Reward] pose: 0.28 | posture: 1.42
+Survivals: 0, Falls: 350
+188.5302
+[Reward] pose: 0.27 | posture: 1.53
+Survivals: 0, Falls: 351
+157.2068
+[Reward] pose: 0.28 | posture: 1.46
+Survivals: 0, Falls: 351
+168.5919
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 352
+163.2801
+[Reward] pose: 0.27 | posture: 1.37
+Survivals: 0, Falls: 352
+138.6268
+[Reward] pose: 0.28 | posture: 1.51
+Survivals: 0, Falls: 353
+210.575
+[Reward] pose: 0.29 | posture: 1.50
+Survivals: 0, Falls: 354
+184.3206
+[Reward] pose: 0.24 | posture: 1.42
+Survivals: 0, Falls: 354
+187.4234
+[Reward] pose: 0.28 | posture: 1.46
+Survivals: 0, Falls: 355
+202.4081
+[Reward] pose: 0.22 | posture: 1.47
+Survivals: 0, Falls: 356
+174.5368
+[Reward] pose: 0.23 | posture: 1.49
+Survivals: 0, Falls: 357
+193.9053
+[Reward] pose: 0.26 | posture: 1.51
+Survivals: 0, Falls: 358
+216.7662
+[Reward] pose: 0.22 | posture: 1.53
+Survivals: 0, Falls: 359
+143.5269
+[Reward] pose: 0.21 | posture: 1.40
+Survivals: 0, Falls: 359
+178.3463
+[Stats] Rolling Avg Episode Length (last 1000): 97.2
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 360
+183.9166
+[Reward] pose: 0.20 | posture: 1.38
+Survivals: 0, Falls: 360
+123.8815
+[Reward] pose: 0.20 | posture: 1.51
+Survivals: 0, Falls: 361
+117.4133
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 362
+133.2584
+[Reward] pose: 0.21 | posture: 1.36
+Survivals: 0, Falls: 362
+181.0556
+[Reward] pose: 0.32 | posture: 1.48
+Survivals: 0, Falls: 363
+244.0041
+[Reward] pose: 0.26 | posture: 1.38
+Survivals: 0, Falls: 363
+192.0094
+[Reward] pose: 0.22 | posture: 1.56
+Survivals: 0, Falls: 364
+164.8815
+[Reward] pose: 0.21 | posture: 1.48
+Survivals: 0, Falls: 364
+181.4502
+[Reward] pose: 0.25 | posture: 1.49
+Survivals: 0, Falls: 365
+210.7317
+[Reward] pose: 0.23 | posture: 1.47
+Survivals: 0, Falls: 366
+261.8922
+[Reward] pose: 0.21 | posture: 1.46
+Survivals: 0, Falls: 367
+165.6523
+[Reward] pose: 0.33 | posture: 1.50
+Survivals: 0, Falls: 368
+139.9878
+[Reward] pose: 0.29 | posture: 1.50
+Survivals: 0, Falls: 368
+185.0602
+[Reward] pose: 0.22 | posture: 1.41
+Survivals: 0, Falls: 368
+121.2146
+[Reward] pose: 0.27 | posture: 1.47
+Survivals: 0, Falls: 369
+235.975
+[Reward] pose: 0.26 | posture: 1.46
+Survivals: 0, Falls: 370
+221.7768
+[Reward] pose: 0.23 | posture: 1.50
+Survivals: 0, Falls: 371
+240.1127
+[Reward] pose: 0.27 | posture: 1.46
+Survivals: 0, Falls: 371
+144.7862
+[Stats] Rolling Avg Episode Length (last 1000): 97.9
+[Reward] pose: 0.28 | posture: 1.49
+Survivals: 0, Falls: 372
+219.3121
+[Reward] pose: 0.19 | posture: 1.40
+Survivals: 0, Falls: 372
+189.6437
+[Reward] pose: 0.28 | posture: 1.51
+Survivals: 0, Falls: 373
+195.9528
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 373
+168.8197
+[Reward] pose: 0.22 | posture: 1.51
+Survivals: 0, Falls: 375
+168.4288
+[Reward] pose: 0.21 | posture: 1.51
+Survivals: 0, Falls: 376
+293.9348
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 377
+162.3343
+[Reward] pose: 0.22 | posture: 1.44
+Survivals: 0, Falls: 377
+182.3377
+[Reward] pose: 0.23 | posture: 1.48
+Survivals: 0, Falls: 378
+128.8679
+[Reward] pose: 0.24 | posture: 1.49
+Survivals: 0, Falls: 379
+175.1991
+[Reward] pose: 0.25 | posture: 1.39
+Survivals: 0, Falls: 379
+218.0709
+[Reward] pose: 0.29 | posture: 1.49
+Survivals: 0, Falls: 380
+158.5224
+[Reward] pose: 0.28 | posture: 1.51
+Survivals: 0, Falls: 380
+142.4357
+[Reward] pose: 0.28 | posture: 1.52
+Survivals: 0, Falls: 381
+188.7413
+[Reward] pose: 0.28 | posture: 1.51
+Survivals: 0, Falls: 382
+209.3269
+[Reward] pose: 0.20 | posture: 1.47
+Survivals: 0, Falls: 383
+154.0157
+[Reward] pose: 0.26 | posture: 1.55
+Survivals: 0, Falls: 384
+270.2442
+[Stats] Rolling Avg Episode Length (last 1000): 97.6
+[Reward] pose: 0.28 | posture: 1.52
+Survivals: 0, Falls: 385
+209.0554
+[Reward] pose: 0.20 | posture: 1.40
+Survivals: 0, Falls: 385
+202.6277
+[Reward] pose: 0.23 | posture: 1.50
+Survivals: 0, Falls: 386
+181.2935
+[Reward] pose: 0.24 | posture: 1.49
+Survivals: 0, Falls: 387
+152.7954
+[Reward] pose: 0.33 | posture: 1.45
+Survivals: 0, Falls: 388
+228.71
+[Reward] pose: 0.26 | posture: 1.52
+Survivals: 0, Falls: 389
+189.1496
+[Reward] pose: 0.24 | posture: 1.34
+Survivals: 0, Falls: 389
+163.1635
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 390
+161.0343
+[Reward] pose: 0.23 | posture: 1.51
+Survivals: 0, Falls: 391
+176.2125
+[Reward] pose: 0.30 | posture: 1.35
+Survivals: 0, Falls: 391
+151.1688
+[Reward] pose: 0.21 | posture: 1.51
+Survivals: 0, Falls: 392
+248.0443
+[Reward] pose: 0.21 | posture: 1.52
+Survivals: 0, Falls: 393
+148.186
+[Reward] pose: 0.23 | posture: 1.51
+Survivals: 0, Falls: 393
+153.9747
+[Reward] pose: 0.25 | posture: 1.48
+Survivals: 0, Falls: 394
+180.8348
+[Reward] pose: 0.28 | posture: 1.43
+Survivals: 0, Falls: 395
+122.1577
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 396
+158.394
+[Reward] pose: 0.25 | posture: 1.48
+Survivals: 0, Falls: 396
+205.6074
+[Reward] pose: 0.29 | posture: 1.48
+Survivals: 0, Falls: 396
+237.4843
+[Reward] pose: 0.31 | posture: 1.37
+Survivals: 0, Falls: 396
+226.3154
+[Stats] Rolling Avg Episode Length (last 1000): 98.0
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 397
+185.1657
+[Reward] pose: 0.26 | posture: 1.47
+Survivals: 0, Falls: 397
+243.2648
+[Reward] pose: 0.24 | posture: 1.51
+Survivals: 0, Falls: 398
+163.4385
+[Reward] pose: 0.28 | posture: 1.51
+Survivals: 0, Falls: 399
+136.4496
+[Reward] pose: 0.24 | posture: 1.49
+Survivals: 0, Falls: 400
+234.3784
+[Reward] pose: 0.20 | posture: 1.33
+Survivals: 0, Falls: 400
+159.1745
+[Reward] pose: 0.24 | posture: 1.45
+Survivals: 0, Falls: 401
+156.5007
+[Reward] pose: 0.29 | posture: 1.41
+Survivals: 0, Falls: 402
+202.266
+[Reward] pose: 0.23 | posture: 1.49
+Survivals: 0, Falls: 403
+121.4929
+[Reward] pose: 0.23 | posture: 1.48
+Survivals: 0, Falls: 404
+175.9704
+[Reward] pose: 0.20 | posture: 1.53
+Survivals: 0, Falls: 405
+150.3614
+[Reward] pose: 0.26 | posture: 1.52
+Survivals: 0, Falls: 405
+192.0713
+[Reward] pose: 0.29 | posture: 1.38
+Survivals: 0, Falls: 405
+163.6871
+[Reward] pose: 0.25 | posture: 1.49
+Survivals: 0, Falls: 406
+159.7083
+[Reward] pose: 0.27 | posture: 1.42
+Survivals: 0, Falls: 407
+176.2222
+[Reward] pose: 0.33 | posture: 1.50
+Survivals: 0, Falls: 408
+187.7661
+[Reward] pose: 0.22 | posture: 1.50
+Survivals: 0, Falls: 408
+149.7432
+[Reward] pose: 0.24 | posture: 1.53
+Survivals: 0, Falls: 409
+147.9938
+[Stats] Rolling Avg Episode Length (last 1000): 97.9
+[Reward] pose: 0.30 | posture: 1.40
+Survivals: 0, Falls: 409
+174.872
+[Reward] pose: 0.29 | posture: 1.47
+Survivals: 0, Falls: 410
+131.9525
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 411
+184.0343
+[Reward] pose: 0.23 | posture: 1.42
+Survivals: 0, Falls: 412
+221.3132
+[Reward] pose: 0.29 | posture: 1.54
+Survivals: 0, Falls: 413
+196.5402
+[Reward] pose: 0.25 | posture: 1.39
+Survivals: 0, Falls: 413
+161.9299
+[Reward] pose: 0.28 | posture: 1.52
+Survivals: 0, Falls: 414
+187.4682
+[Reward] pose: 0.23 | posture: 1.53
+Survivals: 0, Falls: 415
+201.1469
+[Reward] pose: 0.23 | posture: 1.46
+Survivals: 0, Falls: 415
+130.9944
+[Reward] pose: 0.25 | posture: 1.54
+Survivals: 0, Falls: 416
+126.4444
+[Reward] pose: 0.27 | posture: 1.51
+Survivals: 0, Falls: 417
+200.0034
+[Reward] pose: 0.31 | posture: 1.35
+Survivals: 0, Falls: 417
+224.195
+[Reward] pose: 0.30 | posture: 1.51
+Survivals: 0, Falls: 418
+164.9621
+[Reward] pose: 0.23 | posture: 1.39
+Survivals: 0, Falls: 418
+204.8829
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 419
+174.4819
+[Reward] pose: 0.27 | posture: 1.53
+Survivals: 0, Falls: 420
+191.6981
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 421
+188.5368
+[Reward] pose: 0.23 | posture: 1.52
+Survivals: 0, Falls: 422
+161.2507
+[Stats] Rolling Avg Episode Length (last 1000): 98.1
+[Reward] pose: 0.24 | posture: 1.50
+Survivals: 0, Falls: 422
+173.77
+[Reward] pose: 0.26 | posture: 1.48
+Survivals: 0, Falls: 423
+140.74
+[Reward] pose: 0.21 | posture: 1.40
+Survivals: 0, Falls: 423
+135.3533
+[Reward] pose: 0.20 | posture: 1.51
+Survivals: 0, Falls: 424
+146.335
+[Reward] pose: 0.26 | posture: 1.52
+Survivals: 0, Falls: 425
+135.1482
+[Reward] pose: 0.25 | posture: 1.52
+Survivals: 0, Falls: 426
+138.7649
+[Reward] pose: 0.29 | posture: 1.37
+Survivals: 0, Falls: 426
+272.6931
+[Reward] pose: 0.28 | posture: 1.48
+Survivals: 0, Falls: 427
+248.7791
+[Reward] pose: 0.22 | posture: 1.48
+Survivals: 0, Falls: 428
+157.194
+[Reward] pose: 0.27 | posture: 1.50
+Survivals: 0, Falls: 429
+219.8747
+[Reward] pose: 0.27 | posture: 1.51
+Survivals: 0, Falls: 430
+173.9829
+[Reward] pose: 0.24 | posture: 1.44
+Survivals: 0, Falls: 430
+211.2686
+[Reward] pose: 0.29 | posture: 1.51
+Survivals: 0, Falls: 431
+367.3898
+[Reward] pose: 0.23 | posture: 1.46
+Survivals: 0, Falls: 432
+194.9058
+[Reward] pose: 0.25 | posture: 1.49
+Survivals: 0, Falls: 433
+222.9146
+[Reward] pose: 0.26 | posture: 1.53
+Survivals: 0, Falls: 434
+126.4428
+[Stats] Rolling Avg Episode Length (last 1000): 97.8
+[Reward] pose: 0.20 | posture: 1.47
+Survivals: 0, Falls: 434
+145.3991
+[Reward] pose: 0.25 | posture: 1.48
+Survivals: 0, Falls: 435
+138.2507
+[Reward] pose: 0.29 | posture: 1.43
+Survivals: 0, Falls: 435
+203.8038
+[Reward] pose: 0.25 | posture: 1.50
+Survivals: 0, Falls: 436
+197.9314
+[Reward] pose: 0.28 | posture: 1.51
+Survivals: 0, Falls: 437
+203.9207
+[Reward] pose: 0.27 | posture: 1.44
+Survivals: 0, Falls: 438
+170.9293
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 439
+176.2803
+[Reward] pose: 0.27 | posture: 1.52
+Survivals: 0, Falls: 440
+274.6055
+[Reward] pose: 0.27 | posture: 1.51
+Survivals: 0, Falls: 441
+166.778
+[Reward] pose: 0.25 | posture: 1.53
+Survivals: 0, Falls: 442
+176.0039
+[Reward] pose: 0.26 | posture: 1.52
+Survivals: 0, Falls: 443
+179.1372
+[Reward] pose: 0.27 | posture: 1.50
+Survivals: 0, Falls: 443
+198.6762
+[Reward] pose: 0.30 | posture: 1.50
+Survivals: 0, Falls: 444
+220.0184
+[Reward] pose: 0.25 | posture: 1.54
+Survivals: 0, Falls: 445
+139.4033
+[Reward] pose: 0.25 | posture: 1.45
+Survivals: 0, Falls: 445
+188.0567
+[Stats] Rolling Avg Episode Length (last 1000): 98.0
+[Reward] pose: 0.29 | posture: 1.49
+Survivals: 0, Falls: 446
+155.9432
+[Reward] pose: 0.26 | posture: 1.51
+Survivals: 0, Falls: 447
+158.9705
+[Reward] pose: 0.28 | posture: 1.37
+Survivals: 0, Falls: 447
+178.0073
+[Reward] pose: 0.25 | posture: 1.51
+Survivals: 0, Falls: 448
+196.0162
+[Reward] pose: 0.31 | posture: 1.46
+Survivals: 0, Falls: 448
+314.1772
+[Reward] pose: 0.26 | posture: 1.42
+Survivals: 0, Falls: 449
+186.4667
+[Reward] pose: 0.26 | posture: 1.50
+Survivals: 0, Falls: 450
+128.032
+[Reward] pose: 0.23 | posture: 1.49
+Survivals: 0, Falls: 451
+128.1264
+[Reward] pose: 0.17 | posture: 1.52
+Survivals: 0, Falls: 452
+183.1141
+[Reward] pose: 0.30 | posture: 1.48
+Survivals: 0, Falls: 453
+183.8079
+[Reward] pose: 0.22 | posture: 1.52
+Survivals: 0, Falls: 453
+202.9438
+[Reward] pose: 0.27 | posture: 1.51
+Survivals: 0, Falls: 453
+168.191
+[Reward] pose: 0.28 | posture: 1.46
+Survivals: 0, Falls: 453
+135.735
+[Reward] pose: 0.28 | posture: 1.49
+Survivals: 0, Falls: 454
+123.2068
+[Reward] pose: 0.20 | posture: 1.43
+Survivals: 0, Falls: 454
+190.2891
+[Reward] pose: 0.26 | posture: 1.52
+Survivals: 0, Falls: 455
+230.0039
+Setting up 8 worker threads for Enlighten.
+Memory Statistics:
+[ALLOC_TEMP_TLS] TLS Allocator
+  StackAllocators : 
+    [ALLOC_TEMP_MAIN]
+      Peak usage frame count: [8.0 KB-16.0 KB]: 524 frames, [64.0 KB-128.0 KB]: 2063 frames, [2.0 MB-4.0 MB]: 1 frames
+      Initial Block Size 4.0 MB
+      Current Block Size 4.0 MB
+      Peak Allocated Bytes 2.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 4]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Loading.PreloadManager]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 95.4 KB
+      Overflow Count 4
+    [ALLOC_TEMP_Background Job.worker 3]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 11]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 7]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 6]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 11]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 12]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 10]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 2]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 0]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 4]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 5]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 14]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 15]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 13]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 1]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_EnlightenWorker] x 8
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 1]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 199 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 9]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 3]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 5]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 8]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 12]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_AssetGarbageCollectorHelper] x 15
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 138 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 13]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 2]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 10]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 7]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 9]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 0]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 6]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 8]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 14]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Loading.AsyncRead]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 231 B
+      Overflow Count 0
+    [ALLOC_TEMP_BatchDeleteObjects]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+[ALLOC_DEFAULT] Dual Thread Allocator
+  Peak main deferred allocation count 216
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 1.1 MB
+    [ALLOC_DEFAULT_MAIN]
+      Peak usage frame count: [16.0 MB-32.0 MB]: 2588 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 1
+      Peak Allocated memory 30.9 MB
+      Peak Large allocation bytes 16.0 MB
+    [ALLOC_DEFAULT_THREAD]
+      Peak usage frame count: [4.0 MB-8.0 MB]: 2588 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 1
+      Peak Allocated memory 5.9 MB
+      Peak Large allocation bytes 0 B
+[ALLOC_TEMP_JOB_1_FRAME]
+  Initial Block Size 2.0 MB
+  Used Block Count 0
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_2_FRAMES]
+  Initial Block Size 2.0 MB
+  Used Block Count 0
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_4_FRAMES (JobTemp)]
+  Initial Block Size 2.0 MB
+  Used Block Count 1
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_ASYNC (Background)]
+  Initial Block Size 1.0 MB
+  Used Block Count 1
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_GFX] Dual Thread Allocator
+  Peak main deferred allocation count 0
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 1.1 MB
+    [ALLOC_GFX_MAIN]
+      Peak usage frame count: [32.0 KB-64.0 KB]: 2587 frames, [64.0 KB-128.0 KB]: 1 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 1
+      Peak Allocated memory 66.0 KB
+      Peak Large allocation bytes 0 B
+    [ALLOC_GFX_THREAD]
+      Peak usage frame count: [256.0 KB-0.5 MB]: 2588 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 1
+      Peak Allocated memory 399.3 KB
+      Peak Large allocation bytes 0 B
+[ALLOC_CACHEOBJECTS] Dual Thread Allocator
+  Peak main deferred allocation count 2
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 1.1 MB
+    [ALLOC_CACHEOBJECTS_MAIN]
+      Peak usage frame count: [0.5 MB-1.0 MB]: 2588 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 1
+      Peak Allocated memory 0.9 MB
+      Peak Large allocation bytes 0 B
+    [ALLOC_CACHEOBJECTS_THREAD]
+      Peak usage frame count: [128.0 KB-256.0 KB]: 2587 frames, [0.5 MB-1.0 MB]: 1 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 1
+      Peak Allocated memory 0.7 MB
+      Peak Large allocation bytes 0 B
+[ALLOC_TYPETREE] Dual Thread Allocator
+  Peak main deferred allocation count 0
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 1.1 MB
+    [ALLOC_TYPETREE_MAIN]
+      Peak usage frame count: [4.0 KB-8.0 KB]: 2588 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 1
+      Peak Allocated memory 4.1 KB
+      Peak Large allocation bytes 0 B
+    [ALLOC_TYPETREE_THREAD]
+      Peak usage frame count: [0-1.0 KB]: 2588 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 0
+      Peak Allocated memory 0 B
+      Peak Large allocation bytes 0 B
