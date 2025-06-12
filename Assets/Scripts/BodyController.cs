@@ -16,7 +16,7 @@ public class BodyController : MonoBehaviour
 
         foreach (var joint in joints)
         {
-            if (joint.name.Contains("hips"))
+            if (!joint.tag.Contains("Target"))
             {
                 continue;
             }
@@ -79,7 +79,7 @@ public class BodyController : MonoBehaviour
     public Vector3 ComputeCenterOfMass()
     {
         Rigidbody[] rbs = GetComponentsInChildren<Rigidbody>();
-        if (rbs.Length == 0) return transform.position;
+        if (rbs.Length == 0) return chest.transform.position;
 
         Vector3 comSum = Vector3.zero;
         float totalMass = 0f;
@@ -90,7 +90,7 @@ public class BodyController : MonoBehaviour
             totalMass += rb.mass;
         }
 
-        return totalMass > 0f ? comSum / totalMass : transform.position;
+        return totalMass > 0f ? comSum / totalMass : chest.transform.position;
     }
 
 
@@ -111,5 +111,6 @@ public class BodyController : MonoBehaviour
 
         public ArticulationBody rb;
         public Vector3 rotation01;
+        public Vector3 oldRotation01;
     }
 }

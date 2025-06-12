@@ -4,8 +4,7 @@ using Unity.MLAgents.Actuators;
 using UnityEngine;
 using System.Collections.Generic;
 using System;
-using Unity.VisualScripting;
-using Unity.Jobs.LowLevel.Unsafe;
+
 
 public class DollAgent : Agent
 {
@@ -13,6 +12,8 @@ public class DollAgent : Agent
     public GameObject dollPrefab;
     public GameObject floor;
     public GameObject start;
+    public GameObject goal;
+    private float[][] goalBounds;
     public Vector3 startCoordOffset;
 
     [Header("Reward & Bias")]
@@ -58,36 +59,48 @@ public class DollAgent : Agent
     private Vector3 footTargets;
 
 
+    public float moveRewardScale = 0.01f;
+    public float reachReward = 2f;
+    public float reachThreshold = 1f;
+    private Vector3 prevAgentPos;
+    private Vector3 newAgentPos;
+    private Vector3 prevGoalPos;
+
+
+
+    private enum Foot { None, Left, Right }
+    private Foot   lastFootContact = Foot.None;
+    private bool   lastLeftTouch   = false;
+    private bool   lastRightTouch  = false;
+
+    public float alternatingStepReward = 0.05f;
+    public float idealStepLength = 0.3f;
+    private Vector3 lastLeftLandingPos;
+    private Vector3 lastRightLandingPos;
+    public float minStepLength = 0.2f;
+    public float sameFootPenalty = -0.02f;
+    private float stepTimerL = 0f;
+    private float stepTimerR = 0f;
+
+
     public void Start()
     {
         floor = gameObject.transform.parent.Find("Floor").transform.gameObject;
         start = gameObject.transform.parent.Find("Start").transform.gameObject;
+        goal = gameObject.transform.parent.Find("Goal").transform.gameObject;
+        Collider floorCol = floor.transform.GetComponent<BoxCollider>();
+        goalBounds = new float[][] {
+            new float[] { floorCol.bounds.min.x - floorCol.bounds.center.x, floorCol.bounds.max.x - floorCol.bounds.center.x},
+            new float[] { floorCol.bounds.min.z - floorCol.bounds.center.z, floorCol.bounds.max.z - floorCol.bounds.center.z}
+        };
     }
 
     void FixedUpdate()
     {
-        //  // 2. Re-configure every joint on the doll
-        // foreach (var jt in bodyController.targetJoints.Values)
-        // {
-        //     if (jt.joint.connectedBody == null) {
-        //         Debug.Log("Null connected body");
-        //         continue;
-        //     }
-
-        //     // Disable auto-config so we can overwrite the stored value
-        //     jt.joint.autoConfigureConnectedAnchor = false;
-
-        //     // Compute the exact anchor in parent-local space from the current pose
-        //     Vector3 worldPivot = jt.joint.transform.position;  // world space location of the joint
-        //     jt.joint.connectedAnchor = 
-        //         jt.joint.connectedBody.transform.InverseTransformPoint(worldPivot);
-
-        //     // Turn auto-configure back on so Unity locks this new anchor in place
-        //     jt.joint.autoConfigureConnectedAnchor = true;
-        // }
-
-        // Physics.SyncTransforms();
+        stepTimerR += Time.deltaTime;
+        stepTimerL += Time.deltaTime;
     }
+
 
 
     public override void OnEpisodeBegin()
@@ -101,8 +114,6 @@ public class DollAgent : Agent
 
         jointDriveTuner = this.transform.GetComponent<JointDriveTuner>();
         bodyController = dollInstance.GetComponent<BodyController>();
-
-
 
 
         if (jointDriveTuner != null)
@@ -143,6 +154,17 @@ public class DollAgent : Agent
 
         //init the helper classes
         rewardEvaluator = new RewardEvaluator(bodyController, floor, ground, fallenThreshold, heightRewardMulti, idealShinLength, idealThighLength, dollHeight);
+
+
+        prevAgentPos = dollInstance.transform.position;
+        newAgentPos = prevAgentPos;
+        MoveGoalToNewLocation(newAgentPos);
+        prevGoalPos = goal.transform.position;
+
+        lastFootContact = Foot.None;
+        lastLeftTouch = false;
+        lastRightTouch = false;
+
 
     }
 
@@ -193,6 +215,7 @@ public class DollAgent : Agent
         {
             sensor.AddObservation(jt.joint.xDrive.stiffness / jt.baseStrength); // Normalized spring value
             sensor.AddObservation(jt.rotation01); // target rotations as percentage of range
+            sensor.AddObservation((jt.rotation01 - jt.oldRotation01).magnitude);
         }
     }
 
@@ -214,6 +237,27 @@ public class DollAgent : Agent
         sensor.AddObservation(centerOfMass);
 
         sensor.AddObservation(bodyController.spine.transform.position); //21
+
+        Vector3 toGoal = goal.transform.position - bodyController.chest.transform.position;
+        sensor.AddObservation(toGoal);
+
+        float forwardDot = Vector3.Dot(bodyController.chest.transform.forward, toGoal.normalized);
+        sensor.AddObservation(forwardDot);
+
+        float rightDot = Vector3.Dot(bodyController.chest.transform.right, toGoal.normalized);
+        sensor.AddObservation(rightDot);
+
+        float forwardVel = Vector3.Dot(bodyController.hips.GetComponent<ArticulationBody>().velocity, toGoal.normalized);
+        sensor.AddObservation(forwardVel);
+
+        float leftDisp = Vector3.Distance(bodyController.leftFoot.transform.position, lastLeftLandingPos);
+        float rightDisp = Vector3.Distance(bodyController.rightFoot.transform.position, lastRightLandingPos);
+        sensor.AddObservation(leftDisp);
+        sensor.AddObservation(rightDisp);
+        sensor.AddObservation(stepTimerL);
+        sensor.AddObservation(stepTimerR);
+        
+
     }
 
 
@@ -224,7 +268,7 @@ public class DollAgent : Agent
         //checks if any of the dolls key body parts are below a certain distance from the floor
         if (rewardEvaluator.HasFallen())
         {
-            AddReward(-3f);
+            AddReward(-5f);
             trackEpisodeAvgLength();
             EndEpisode();
             falls++;
@@ -232,7 +276,105 @@ public class DollAgent : Agent
         }
 
         RewardAndLog();
+        GoalMovementReward();
 
+    }
+
+
+    private void GoalMovementReward()
+    {
+
+        bool leftTouch = IsFootTouching(bodyController.leftFoot);
+        bool rightTouch = IsFootTouching(bodyController.rightFoot);
+
+        bool newLeft = leftTouch && !lastLeftTouch;
+        bool newRight = rightTouch && !lastRightTouch;
+
+        float progressTowardGoal = CalculateProgress();
+
+        if (newLeft)
+        {
+            stepTimerL = 0f;
+            Vector3 thisLanding = bodyController.leftFoot.transform.position;
+            float stepLen = Vector3.Distance(thisLanding, lastLeftLandingPos);
+
+            if (lastFootContact == Foot.Right && stepLen > 0.05f)
+            {
+                AddReward(alternatingStepReward * Mathf.Clamp((progressTowardGoal / idealStepLength) - minStepLength, -minStepLength, 1));
+                lastFootContact = Foot.Left;
+                lastLeftLandingPos = thisLanding;
+            }
+            else if (lastFootContact == Foot.Left && stepLen > 0.05f)
+            {
+                AddReward(sameFootPenalty);
+                lastFootContact = Foot.Left;
+                lastLeftLandingPos = thisLanding;
+            }
+
+
+        }
+        else if (newRight)
+        {
+            stepTimerR = 0f;
+            Vector3 thisLanding = bodyController.leftFoot.transform.position;
+            float stepLen = Vector3.Distance(thisLanding, lastLeftLandingPos);
+
+            if (lastFootContact == Foot.Left && stepLen > 0.05f)
+            {
+                AddReward(alternatingStepReward * Mathf.Clamp((progressTowardGoal / idealStepLength) - minStepLength, -minStepLength, 1));
+                lastFootContact = Foot.Right;
+                lastRightLandingPos = thisLanding;
+            }
+            else if (lastFootContact == Foot.Right && stepLen > 0.05f)
+            {
+                AddReward(sameFootPenalty);
+                lastFootContact = Foot.Right;
+                lastRightLandingPos = thisLanding;
+            }
+        }
+        lastLeftTouch = leftTouch;
+        lastRightTouch = rightTouch;
+        
+    }
+
+    private float CalculateProgress()
+    {
+        float oldDist = Vector3.Distance(prevAgentPos, prevGoalPos);
+        float newDist = Vector3.Distance(dollInstance.transform.position, goal.transform.position);
+        float delta = oldDist - newDist;
+        newAgentPos = dollInstance.transform.position;
+
+        if (newDist < reachThreshold)
+        {
+            AddReward(reachReward);
+            MoveGoalToNewLocation(newAgentPos);
+            prevAgentPos = dollInstance.transform.position;
+        }
+        return delta;
+    }
+
+    private void MoveGoalToNewLocation(Vector3 agentPos)
+    {
+        // Generate a random position within the goal bounds
+        Vector2 rand;
+
+        Vector3 newGoalPos;
+        // Ensure the new goal position is not too close to the agent
+        do
+        {
+            rand = new Vector2(
+                UnityEngine.Random.Range(goalBounds[0][0] + 2, goalBounds[0][1] - 2),
+                UnityEngine.Random.Range(goalBounds[1][0] + 2, goalBounds[1][1] - 2)
+            );
+            newGoalPos = new Vector3(
+                floor.transform.position.x + rand.x,
+                goal.transform.position.y,
+                floor.transform.position.z + rand.y
+            );
+        } while (Vector3.Distance(agentPos, newGoalPos) < reachThreshold * 5f);
+
+        goal.transform.position = newGoalPos;
+        prevGoalPos = newGoalPos;
     }
 
     private void RewardAndLog()
@@ -299,10 +441,17 @@ public class DollAgent : Agent
             AddReward(angularPenalty);
         }
 
+        float jerkiness = 0f;
+        foreach (var jt in bodyController.targetJoints.Values)
+        {
+            jerkiness += (jt.rotation01 - jt.oldRotation01).magnitude;
+        }
+        AddReward(-jerkiness * 0.001f);
+
         if (StepCount % 100 == 0)
         {
             Debug.Log("adding 100 bonus");
-             AddReward(GetCumulativeReward() * 0.01f);
+            AddReward(GetCumulativeReward() * 0.01f);
         }
 
         if (StepCount >= MaxStep - 1)
@@ -342,6 +491,8 @@ public class DollAgent : Agent
                 var newDrive = jointDriveTuner.GenerateDrive(newForce);
                 jointDriveTuner.SetNewDrives(jt, newDrive);
 
+                jt.oldRotation01 = jt.rotation01;
+
                 jt.rotation01 = new Vector3(
                     Mathf.Clamp((actions.ContinuousActions[i++] + 1f) * 0.5f, 0.01f, 0.99f),
                     Mathf.Clamp((actions.ContinuousActions[i++] + 1f) * 0.5f, 0.01f, 0.99f),
@@ -355,6 +506,10 @@ public class DollAgent : Agent
                 );
 
                 target = deltaEuler;
+            }
+            else
+            {
+                break;
             }
 
             var new_x_drive = jt.joint.xDrive;

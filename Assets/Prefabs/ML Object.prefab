@@ -54,6 +54,7 @@ MonoBehaviour:
   dollPrefab: {fileID: 7536360504437603090, guid: 57844d4e62f72754ba0cb58661accb86, type: 3}
   floor: {fileID: 0}
   start: {fileID: 0}
+  goal: {fileID: 0}
   startCoordOffset: {x: 0, y: 0.16, z: 0}
   fallenThreshold: 0.45
   ground:
@@ -66,6 +67,13 @@ MonoBehaviour:
   logFrequency: 50
   falls: 0
   survivals: 0
+  moveRewardScale: 0.01
+  reachReward: 2
+  reachThreshold: 1
+  alternatingStepReward: 0.05
+  idealStepLength: 0.3
+  minStepLength: 0.2
+  sameFootPenalty: -0.02
 --- !u!114 &54662837634684569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,13 +87,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   springValues:
-    legSpring: 1500
-    footSpring: 1200
-    torsoSpring: 1200
-    armSpring: 800
+    legSpring: 1250
+    footSpring: 1250
+    torsoSpring: 800
+    armSpring: 600
     headSpring: 400
-  criticalFactor: 2
-  maxForceScalar: 5
+  dampingFactor: 11
+  maxForceScalar: 4
 --- !u!114 &7908416338575260448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 245
+    VectorObservationSize: 269
     NumStackedVectorObservations: 30
     m_ActionSpec:
       m_NumContinuousActions: 56

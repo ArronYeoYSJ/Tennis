@@ -7,9 +7,9 @@ public class JointDriveTuner : MonoBehaviour
     [SerializeField]
     SpringValues springValues;
 
-    [Header("Critical Damping Factor")]
-    [Range(0.8f, 2f)]
-    public float criticalFactor = 1.0f;
+    [Header("Damping %")]
+    [Range(0, 100)]
+    public float dampingFactor = 10;
 
     [Header("Max Force Scalar")]
     
@@ -68,13 +68,11 @@ public class JointDriveTuner : MonoBehaviour
 
     public JointDrive GenerateDrive(float spring)
     {
-        float damper = criticalFactor * Mathf.Sqrt(spring);
         float maxForce = spring * maxForceScalar;
 
         return new JointDrive
         {
             positionSpring = spring,
-            positionDamper = damper,
             maximumForce = maxForce
         };
     }
@@ -89,9 +87,9 @@ public class JointDriveTuner : MonoBehaviour
         y_drive.stiffness = drive.positionSpring;
         z_drive.stiffness = drive.positionSpring;
 
-        z_drive.damping = drive.positionDamper;
-        y_drive.damping = drive.positionDamper;
-        x_drive.damping = drive.positionDamper;
+        z_drive.damping = jt.baseStrength * dampingFactor / 100;
+        y_drive.damping = jt.baseStrength * dampingFactor / 100;
+        x_drive.damping = jt.baseStrength * dampingFactor / 100;
 
         x_drive.forceLimit = drive.maximumForce;
         y_drive.forceLimit = drive.maximumForce;
