@@ -61,21 +61,10 @@ public class BodyController : MonoBehaviour
             }
         }
     }
-    ///old testing code, too jittery
-
-    // void FixedUpdate()
-    // {
-    //     foreach (var jt in targetJoints.Values)
-    //     {
-    //         jt.joint.targetRotation = jt.previousLocalRotationTarget * jt.joint.transform.localRotation * Quaternion.Inverse(jt.initialLocalRotation);
-    //         jt.previousLocalRotationTarget = jt.joint.targetRotation;
-    //     }
-    // }
 
 
-    /// <summary>
-    /// Computes the weighted center of mass of the entire doll, based on Rigidbody mass.
-    /// </summary>
+    //Computes the weighted center of mass of the entire doll, based on Rigidbody mass.
+
     public Vector3 ComputeCenterOfMass()
     {
         Rigidbody[] rbs = GetComponentsInChildren<Rigidbody>();

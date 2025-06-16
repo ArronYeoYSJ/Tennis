@@ -144,6 +144,7 @@ public class DollAgent : Agent
         float dollHeight = bodyController.head.transform.position.y - bodyController.leftFoot.transform.position.y;
         Vector3 rightFootStartPos = bodyController.rightFoot.transform.position;
         Vector3 leftFootStartPos = bodyController.leftFoot.transform.position;
+        // Calculate the right foot's position relative to the left foot in the left foot's local coordinate space
         Vector3 startingFootDelta = bodyController.leftFoot.transform.InverseTransformPoint(rightFootStartPos);
 
         footTargets = new Vector3(
@@ -300,7 +301,7 @@ public class DollAgent : Agent
 
             if (lastFootContact == Foot.Right && stepLen > 0.05f)
             {
-                AddReward(alternatingStepReward * Mathf.Clamp((progressTowardGoal / idealStepLength) - minStepLength, -minStepLength, 1));
+                AddReward(alternatingStepReward * Mathf.Clamp((stepLen / idealStepLength) - minStepLength, -minStepLength, 1));
                 lastFootContact = Foot.Left;
                 lastLeftLandingPos = thisLanding;
             }
@@ -316,12 +317,12 @@ public class DollAgent : Agent
         else if (newRight)
         {
             stepTimerR = 0f;
-            Vector3 thisLanding = bodyController.leftFoot.transform.position;
-            float stepLen = Vector3.Distance(thisLanding, lastLeftLandingPos);
+            Vector3 thisLanding = bodyController.rightFoot.transform.position;
+            float stepLen = Vector3.Distance(thisLanding, lastRightLandingPos);
 
             if (lastFootContact == Foot.Left && stepLen > 0.05f)
             {
-                AddReward(alternatingStepReward * Mathf.Clamp((progressTowardGoal / idealStepLength) - minStepLength, -minStepLength, 1));
+                AddReward(alternatingStepReward * Mathf.Clamp((stepLen / idealStepLength) - minStepLength, -minStepLength, 1));
                 lastFootContact = Foot.Right;
                 lastRightLandingPos = thisLanding;
             }
@@ -486,8 +487,8 @@ public class DollAgent : Agent
                 var y_drive = jt.joint.yDrive;
                 var z_drive = jt.joint.zDrive;
 
-                //allows the agent to moderate the strength of each joint by +/- 50%
-                float newForce = actions.ContinuousActions[i++] * 0.99f * jt.baseStrength + jt.baseStrength;
+                //allows the agent to moderate the strength of each joint by +/- 99%
+                float newForce = jt.baseStrength + actions.ContinuousActions[i++] * 0.99f * jt.baseStrength ;
                 var newDrive = jointDriveTuner.GenerateDrive(newForce);
                 jointDriveTuner.SetNewDrives(jt, newDrive);
 
