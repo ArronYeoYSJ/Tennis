@@ -70,10 +70,10 @@ MonoBehaviour:
   moveRewardScale: 0.01
   reachReward: 2
   reachThreshold: 1
-  alternatingStepReward: 0.05
-  idealStepLength: 0.3
-  minStepLength: 0.2
-  sameFootPenalty: -0.02
+  alternatingStepReward: 0.35
+  idealStepLength: 0.25
+  minStepLength: 0.15
+  sameFootPenalty: -0.05
 --- !u!114 &54662837634684569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,9 +116,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: f4c531a89737103459267245b49bd756, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
+  m_BehaviorType: 2
   m_BehaviorName: DollAgent
   TeamId: 0
   m_UseChildSensors: 0
